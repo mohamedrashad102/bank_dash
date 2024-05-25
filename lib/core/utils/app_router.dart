@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../inital_view.dart';
+
 class AppRouter {
   static String account = '/account';
   static String creditCards = '/creditCards';
@@ -14,6 +16,10 @@ class AppRouter {
 
   static final GoRouter router = GoRouter(
     routes: [
+      GoRoute(
+        path: '/',
+        builder: (context, state) => const InitialView(),
+      ),
       GoRoute(
         path: account,
         builder: (context, state) => Container(),
