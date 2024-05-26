@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 double getScaleFactor(BuildContext context) {
   final width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.mobileBreakPoint) {
-    return width / 480;
+    return width / 300;
   } else if (width < SizeConfig.tabletBreakPoint) {
     return width / SizeConfig.mobileBreakPoint;
   } else {
