@@ -16,15 +16,18 @@ class OverviewView extends StatelessWidget {
     return const Scaffold(
       appBar: CustomAppBar(title: 'Overview'),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            MyCards(),
-            RecentTransaction(),
-            WeeklyActivity(),
-            ExpenseStatistics(),
-            QuickTransfer(),
-            BalanceHistory(),
-          ],
+        child: Padding(
+          padding: EdgeInsets.all(25),
+          child: Column(
+            children: [
+              MyCards(),
+              RecentTransaction(),
+              WeeklyActivity(),
+              ExpenseStatistics(),
+              QuickTransfer(),
+              BalanceHistory(),
+            ],
+          ),
         ),
       ),
     );

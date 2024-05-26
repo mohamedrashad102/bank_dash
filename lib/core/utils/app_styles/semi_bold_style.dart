@@ -14,20 +14,20 @@ class SemiBoldStyle {
   TextStyle fontSize13(BuildContext context) {
     return _base(
       color: const Color(0xFFFFFFFF),
-      fontSize: getFontSize(context, 16),
+      fontSize: getFontSize(context, 13),
     );
   }
 
   TextStyle fontSize15(BuildContext context) {
     return _base(
       color: const Color(0xFFFFFFFF),
-      fontSize: getFontSize(context, 16),
+      fontSize: getFontSize(context, 15),
     );
   }
 
   TextStyle fontSize16(BuildContext context) {
     return _base(
-      color: const Color(0xFF232323),
+      color: const Color(0xFF343C6A),
       fontSize: getFontSize(context, 16),
     );
   }
@@ -49,7 +49,7 @@ class SemiBoldStyle {
   TextStyle fontSize22(BuildContext context) {
     return _base(
       color: const Color(0xFF333B69),
-      fontSize: getFontSize(context, 20),
+      fontSize: getFontSize(context, 22),
     );
   }
 
