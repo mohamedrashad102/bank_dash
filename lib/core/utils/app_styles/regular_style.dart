@@ -14,14 +14,14 @@ class RegularStyle {
   TextStyle fontSize10(BuildContext context) {
     return _base(
       color: const Color(0xFFFFFFFF),
-      fontSize: getFontSize(context, 12),
+      fontSize: getFontSize(context, 10),
     );
   }
 
   TextStyle fontSize11(BuildContext context) {
     return _base(
       color: const Color(0xFF718EBF),
-      fontSize: getFontSize(context, 12),
+      fontSize: getFontSize(context, 11),
     );
   }
 
@@ -35,7 +35,7 @@ class RegularStyle {
   TextStyle fontSize13(BuildContext context) {
     return _base(
       color: const Color(0xFF718EBF),
-      fontSize: getFontSize(context, 12),
+      fontSize: getFontSize(context, 13),
     );
   }
 
@@ -49,7 +49,7 @@ class RegularStyle {
   TextStyle fontSize15(BuildContext context) {
     return _base(
       color: const Color(0xFF718EBF),
-      fontSize: getFontSize(context, 14),
+      fontSize: getFontSize(context, 15),
     );
   }
 
