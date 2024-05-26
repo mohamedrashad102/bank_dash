@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -42,7 +42,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           const Gap(20),
           const CustomSearchBar(),
-          const Gap(20),
         ],
       ),
     );
