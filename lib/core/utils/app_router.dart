@@ -1,3 +1,4 @@
+import 'package:bank_dash/features/mobile_layout/overview/views/overview_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -42,7 +43,7 @@ class AppRouter {
       ),
       GoRoute(
         path: overview,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const OverviewView(),
       ),
       GoRoute(
         path: services,
