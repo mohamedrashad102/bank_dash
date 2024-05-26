@@ -1,8 +1,8 @@
-import 'package:bank_dash/features/mobile_layout/overview/views/overview_view.dart';
+import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../inital_view.dart';
+import '../../initial_view.dart';
 
 class AppRouter {
   static String account = '/account';
