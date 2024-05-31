@@ -1,3 +1,4 @@
+import 'package:bank_dash/core/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/widgets/custom_app_bar.dart';
@@ -15,6 +16,7 @@ class OverviewView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(title: 'Overview'),
+      drawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(25),

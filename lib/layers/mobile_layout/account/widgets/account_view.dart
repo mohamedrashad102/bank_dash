@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
 
-class TransactionsView extends StatelessWidget {
-  const TransactionsView({super.key});
+class AccountView extends StatelessWidget {
+  const AccountView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const CustomScaffold(
-      title: 'Transactions',
+      title: 'Account',
     );
   }
 }

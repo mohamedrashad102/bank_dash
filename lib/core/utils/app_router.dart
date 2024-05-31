@@ -1,45 +1,52 @@
+import 'package:bank_dash/layers/mobile_layout/home/views/home_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
-import 'package:flutter/material.dart';
+import 'package:bank_dash/layers/mobile_layout/transactions/views/transactions_view.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../initial_view.dart';
+import '../../layers/mobile_layout/account/widgets/account_view.dart';
+import '../../layers/mobile_layout/credit_cards/widgets/credit_card_view.dart';
+import '../../layers/mobile_layout/investments/views/investments_view.dart';
+import '../../layers/mobile_layout/loans/views/loans_view.dart';
+import '../../layers/mobile_layout/my_privileges/views/my_privileges_view.dart';
+import '../../layers/mobile_layout/services/views/services_view.dart';
+import '../../layers/mobile_layout/settings/views/settings_view.dart';
 
 class AppRouter {
-  static String account = '/account';
-  static String creditCards = '/creditCards';
-  static String investments = '/investments';
-  static String loans = '/loans';
-  static String myPrivileges = '/myPrivileges';
-  static String overview = '/overview';
-  static String services = '/services';
-  static String settings = '/settings';
-  static String transactions = '/transactions';
+  static const String account = '/account';
+  static const String creditCards = '/creditCards';
+  static const String investments = '/investments';
+  static const String loans = '/loans';
+  static const String myPrivileges = '/myPrivileges';
+  static const String overview = '/overview';
+  static const String services = '/services';
+  static const String settings = '/settings';
+  static const String transactions = '/transactions';
 
   static final GoRouter router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const InitialView(),
+        builder: (context, state) => const HomeView(),
       ),
       GoRoute(
         path: account,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const AccountView(),
       ),
       GoRoute(
         path: creditCards,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const CreditCardView(),
       ),
       GoRoute(
         path: investments,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const InvestmentsView(),
       ),
       GoRoute(
         path: loans,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const LoansView(),
       ),
       GoRoute(
         path: myPrivileges,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const MyPrivilegesView(),
       ),
       GoRoute(
         path: overview,
@@ -47,15 +54,15 @@ class AppRouter {
       ),
       GoRoute(
         path: services,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const ServicesView(),
       ),
       GoRoute(
         path: settings,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const SettingsView(),
       ),
       GoRoute(
         path: transactions,
-        builder: (context, state) => Container(),
+        builder: (context, state) => const TransactionsView(),
       ),
     ],
   );
