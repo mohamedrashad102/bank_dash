@@ -1,7 +1,7 @@
 import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
 import 'package:bank_dash/core/models/drawer_model.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
-import 'package:bank_dash/core/utils/coloors.dart';
+import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -84,7 +84,7 @@ class DrawerListViewItem extends StatelessWidget {
             height: 60,
             width: 6,
             decoration: BoxDecoration(
-              color: isSelected ? Coloors.primary3 : Colors.transparent,
+              color: isSelected ? AppColors.primary3 : Colors.transparent,
               borderRadius: const BorderRadius.only(
                 topRight: Radius.circular(10),
                 bottomRight: Radius.circular(10),

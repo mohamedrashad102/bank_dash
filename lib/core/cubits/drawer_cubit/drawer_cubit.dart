@@ -5,7 +5,7 @@ import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../layers/mobile_layout/account/widgets/account_view.dart';
+import '../../../layers/mobile_layout/account/views/account_view.dart';
 import '../../../layers/mobile_layout/credit_cards/widgets/credit_card_view.dart';
 import '../../../layers/mobile_layout/investments/views/investments_view.dart';
 import '../../../layers/mobile_layout/loans/views/loans_view.dart';
@@ -38,7 +38,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
       title: 'Accounts',
       icon: Assets.imagesAccountIcon,
       path: AppRouter.account,
-      view: AccountView(),
+      view: AccountsView(),
     ),
     DrawerModel(
       title: 'Investments',
@@ -60,7 +60,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     ),
     DrawerModel(
       title: 'Services',
-      icon: Assets.imagesServicesIcon,
+      icon: Assets.imagesService,
       path: AppRouter.services,
       view: ServicesView(),
     ),
@@ -72,7 +72,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     ),
     DrawerModel(
       title: 'Settings',
-      icon: Assets.imagesSettingsIcon,
+      icon: Assets.imagesSettings,
       path: AppRouter.settings,
       view: SettingsView(),
     ),
