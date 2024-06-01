@@ -17,6 +17,10 @@ class Assets {
   /// assets/images/bank_dash_logo.png
   static const String imagesBankDashLogo = "assets/images/bank_dash_logo.png";
 
+  /// Assets for imagesChart
+  /// assets/images/chart.svg
+  static const String imagesChart = "assets/images/chart.svg";
+
   /// Assets for imagesChipCard
   /// assets/images/Chip_Card.svg
   static const String imagesChipCard = "assets/images/Chip_Card.svg";
@@ -24,6 +28,10 @@ class Assets {
   /// Assets for imagesChipCard2
   /// assets/images/Chip_Card2.svg
   static const String imagesChipCard2 = "assets/images/Chip_Card2.svg";
+
+  /// Assets for imagesChipCardPng
+  /// assets/images/Chip_Card_png.png
+  static const String imagesChipCardPng = "assets/images/Chip_Card_png.png";
 
   /// Assets for imagesCreditCardsIcon
   /// assets/images/credit_cards_icon.svg
@@ -73,6 +81,14 @@ class Assets {
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
 
+  /// Assets for imagesMasterCard
+  /// assets/images/master_card.svg
+  static const String imagesMasterCard = "assets/images/master_card.svg";
+
+  /// Assets for imagesMobileService
+  /// assets/images/mobile_service.svg
+  static const String imagesMobileService = "assets/images/mobile_service.svg";
+
   /// Assets for imagesMoneyTag
   /// assets/images/money-tag.svg
   static const String imagesMoneyTag = "assets/images/money-tag.svg";
@@ -88,6 +104,10 @@ class Assets {
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
+
+  /// Assets for imagesPinkPerson
+  /// assets/images/pink_person.svg
+  static const String imagesPinkPerson = "assets/images/pink_person.svg";
 
   /// Assets for imagesSaving
   /// assets/images/saving.svg
@@ -109,9 +129,17 @@ class Assets {
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
 
+  /// Assets for imagesSpotify
+  /// assets/images/spotify.svg
+  static const String imagesSpotify = "assets/images/spotify.svg";
+
   /// Assets for imagesTransactionsIcon
   /// assets/images/transactions_icon.svg
   static const String imagesTransactionsIcon = "assets/images/transactions_icon.svg";
+
+  /// Assets for imagesUs
+  /// assets/images/us.jpg
+  static const String imagesUs = "assets/images/us.jpg";
 
   /// Assets for imagesUser
   /// assets/images/user.svg

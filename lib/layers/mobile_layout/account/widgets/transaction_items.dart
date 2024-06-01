@@ -1,0 +1,63 @@
+import 'package:bank_dash/core/models/common_item_model.dart';
+import 'package:bank_dash/core/utils/app_colors.dart';
+import 'package:bank_dash/core/utils/assets.dart';
+import 'package:bank_dash/core/widgets/custom_common_item.dart';
+import 'package:flutter/material.dart';
+
+class TransactionItems extends StatelessWidget {
+  const TransactionItems({
+    super.key,
+  });
+  static List<CommonItemModel> transactionItems = [
+    CommonItemModel(
+      title: 'Spotify Subscription',
+      amount: r'$-150',
+      icon: Assets.imagesSpotify,
+      bgColor: AppColors.bgColorTeal,
+      date: '25 Jan 2021',
+    ),
+    CommonItemModel(
+      title: 'Mobile Service',
+      amount: r'$-340',
+      icon: Assets.imagesMobileService,
+      bgColor: AppColors.bgColorBlue,
+      date: '25 Jan 2021',
+    ),
+    CommonItemModel(
+      title: 'Emilly Wilson',
+      amount: r'$+750',
+      icon: Assets.imagesPinkPerson,
+      bgColor: AppColors.bgColorPink,
+      date: '25 Jan 2021',
+    ),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        children: transactionItems
+            .asMap()
+            .entries
+            .map(
+              (e) => Padding(
+                padding: e.key == 1
+                    ? const EdgeInsets.symmetric(vertical: 12.0)
+                    : EdgeInsets.zero,
+                child: CustomCommonItem(
+                  commonItemModel: e.value,
+                  textColor: e.value.amount.contains('-')
+                      ? AppColors.decrementColor
+                      : AppColors.incrementColor,
+                ),
+              ),
+            )
+            .toList(),
+      ),
+    );
+  }
+}

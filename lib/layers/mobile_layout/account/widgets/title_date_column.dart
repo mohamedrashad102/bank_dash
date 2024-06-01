@@ -1,7 +1,8 @@
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
-import 'package:bank_dash/layers/mobile_layout/account/models/account_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/models/common_item_model.dart';
 
 class TitleDateColumn extends StatelessWidget {
   const TitleDateColumn({
@@ -9,7 +10,7 @@ class TitleDateColumn extends StatelessWidget {
     required this.transactionItemModel,
   });
 
-  final TransactionItemModel transactionItemModel;
+  final CommonItemModel transactionItemModel;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,9 @@ class TitleDateColumn extends StatelessWidget {
         FittedBox(
           child: Text(
             transactionItemModel.title,
-            style: AppStyles.medium.fontSize14(context),
+            style: AppStyles.medium
+                .fontSize14(context)
+                .copyWith(color: const Color(0xff333B69)),
           ),
         ),
         const Gap(4),
