@@ -12,29 +12,29 @@ class AllAccountItems extends StatelessWidget {
   });
   static List<AccountItemModel> items = [
     AccountItemModel(
-        title: 'My Balance', 
-        value: r'$12,750', 
-        icon: Assets.imagesMoneyTag, 
-        bgColor: AppColors.bgColorYellow,
-      ),
-      AccountItemModel(
-        title: 'Income',
-        value: r'$5,600',
-        icon: Assets.imagesIncome,
-        bgColor: AppColors.bgColorBlue,
-      ),
-      AccountItemModel(
-        title: 'Expense',
-        value: r'$3,450',
-        icon: Assets.imagesExpense,
-        bgColor: AppColors.bgColorPink,
-      ),
-      AccountItemModel(
-        title: 'My Investments',
-        value: r'$7,900',
-        icon: Assets.imagesSaving,
-        bgColor: AppColors.bgColorTeal,
-      ),
+      title: 'My Balance',
+      value: '12,750',
+      icon: Assets.imagesMoneyTag,
+      bgColor: AppColors.bgColorYellow,
+    ),
+    AccountItemModel(
+      title: 'Income',
+      value: '5,600',
+      icon: Assets.imagesIncome,
+      bgColor: AppColors.bgColorBlue,
+    ),
+    AccountItemModel(
+      title: 'Expense',
+      value: '3,450',
+      icon: Assets.imagesExpense,
+      bgColor: AppColors.bgColorPink,
+    ),
+    AccountItemModel(
+      title: 'My Investments',
+      value: '7,900',
+      icon: Assets.imagesSaving,
+      bgColor: AppColors.bgColorTeal,
+    ),
   ];
   @override
   Widget build(BuildContext context) {

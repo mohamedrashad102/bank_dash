@@ -11,21 +11,21 @@ class TransactionItems extends StatelessWidget {
   static List<CommonItemModel> transactionItems = [
     CommonItemModel(
       title: 'Spotify Subscription',
-      amount: r'$-150',
+      amount: '-150',
       icon: Assets.imagesSpotify,
       bgColor: AppColors.bgColorTeal,
       date: '25 Jan 2021',
     ),
     CommonItemModel(
       title: 'Mobile Service',
-      amount: r'$-340',
+      amount: '-340',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
       date: '25 Jan 2021',
     ),
     CommonItemModel(
       title: 'Emilly Wilson',
-      amount: r'$+750',
+      amount: '+750',
       icon: Assets.imagesPinkPerson,
       bgColor: AppColors.bgColorPink,
       date: '25 Jan 2021',

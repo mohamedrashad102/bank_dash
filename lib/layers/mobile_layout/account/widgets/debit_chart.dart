@@ -1,19 +1,21 @@
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import 'chart_header.dart';
 
-class DespiteChart extends StatefulWidget {
-  const DespiteChart({super.key});
+class DebitChart extends StatefulWidget {
+  const DebitChart({super.key});
   final Color leftBarColor = AppColors.contentColorPink;
   final Color rightBarColor = AppColors.contentColorBlue;
   final Color avgColor = AppColors.contentColorOrange;
   @override
-  State<StatefulWidget> createState() => DespiteChartState();
+  State<StatefulWidget> createState() => DebitChartState();
 }
 
-class DespiteChartState extends State<DespiteChart> {
+class DebitChartState extends State<DebitChart> {
   final double width = 10;
 
   late List<BarChartGroupData> rawBarGroups;
@@ -49,13 +51,19 @@ class DespiteChartState extends State<DespiteChart> {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 1,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      padding: const EdgeInsets.all(20),
+      child: AspectRatio(
+        aspectRatio: 1.4,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            const ChartHeader(),
+            const Gap(17),
             Expanded(
               child: BarChart(
                 BarChartData(

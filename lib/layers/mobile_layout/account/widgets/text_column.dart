@@ -23,7 +23,7 @@ class TextColumn extends StatelessWidget {
         ),
         FittedBox(
           child: Text(
-            value,
+            '\$$value',
             style: AppStyles.semiBold.fontSize16(context).copyWith(
                   color: const Color(
                     0xff232323,

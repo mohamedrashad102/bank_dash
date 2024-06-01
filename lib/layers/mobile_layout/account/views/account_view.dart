@@ -1,10 +1,10 @@
-import 'package:bank_dash/core/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
 import '../widgets/all_account_items.dart';
-import '../widgets/despite_chart.dart';
+import '../widgets/debit_section.dart';
+import '../widgets/inovice_section.dart';
 import '../widgets/last_transaction_section.dart';
 import '../widgets/my_cards_section.dart';
 
@@ -26,14 +26,8 @@ class AccountsView extends StatelessWidget {
               Gap(22),
               MyCardsSection(),
               Gap(22),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  TitleText(title: 'Debit & Credit Overview'),
-                  Gap(12),
-                  DespiteChart(),
-                ],
-              )
+              DebitSection(),
+              InoviceSection()
             ],
           ),
         ),

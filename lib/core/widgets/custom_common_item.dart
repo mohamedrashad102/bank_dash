@@ -25,7 +25,7 @@ class CustomCommonItem extends StatelessWidget {
         TitleDateColumn(transactionItemModel: commonItemModel),
         const Spacer(),
         Text(
-          commonItemModel.amount,
+          '\$${commonItemModel.amount}',
           style:
               AppStyles.medium.fontSize12(context).copyWith(color: textColor),
         ),
