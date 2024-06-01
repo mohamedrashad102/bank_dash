@@ -1,7 +1,7 @@
 import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
 import 'package:bank_dash/core/models/drawer_model.dart';
-import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
+import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -92,11 +92,19 @@ class DrawerListViewItem extends StatelessWidget {
             ),
           ),
           const Gap(40),
-          SvgPicture.asset(item.icon),
+          SvgPicture.asset(
+            item.icon,
+            colorFilter: ColorFilter.mode(
+              isSelected ? AppColors.primary3 : AppColors.greyColor,
+              BlendMode.srcIn,
+            ),
+          ),
           const Gap(25),
           Text(
             item.title,
-            style: AppStyles.medium.fontSize18(context),
+            style: AppStyles.medium.fontSize18(context).copyWith(
+                  color: !isSelected ? AppColors.greyColor : null,
+                ),
           ),
         ],
       ),
