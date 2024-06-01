@@ -31,6 +31,12 @@ class SemiBoldStyle {
       fontSize: getFontSize(context, 16),
     );
   }
+TextStyle fontSize14(BuildContext context) {
+    return _base(
+      color: const Color(0xFF343C6A),
+      fontSize: getFontSize(context, 14),
+    );
+  }
 
   TextStyle fontSize18(BuildContext context) {
     return _base(

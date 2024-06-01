@@ -2,6 +2,7 @@ import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/widgets/title_text.dart';
 import '../models/credit_card_model.dart';
 
 class MyCards extends StatelessWidget {
@@ -34,14 +35,13 @@ class MyCards extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text(
-              'My Cards',
-              style: AppStyles.semiBold.fontSize16(context),
+            const TitleText(
+              title: 'My Cards',
             ),
             const Spacer(),
             Text(
               'See All',
-              style: AppStyles.semiBold.fontSize16(context),
+              style: AppStyles.semiBold.fontSize14(context),
             ),
           ],
         ),

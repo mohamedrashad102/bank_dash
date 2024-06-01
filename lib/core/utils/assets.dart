@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAbdo
+  /// assets/images/abdo.jpg
+  static const String imagesAbdo = "assets/images/abdo.jpg";
+
   /// Assets for imagesAccountIcon
   /// assets/images/account_icon.svg
   static const String imagesAccountIcon = "assets/images/account_icon.svg";
@@ -37,6 +41,10 @@ class Assets {
   /// assets/images/econometrics.svg
   static const String imagesEconometrics = "assets/images/econometrics.svg";
 
+  /// Assets for imagesExpense
+  /// assets/images/Expense.svg
+  static const String imagesExpense = "assets/images/Expense.svg";
+
   /// Assets for imagesFromMy
   /// assets/images/from_my.svg
   static const String imagesFromMy = "assets/images/from_my.svg";
@@ -53,6 +61,10 @@ class Assets {
   /// assets/images/home_icon.svg
   static const String imagesHomeIcon = "assets/images/home_icon.svg";
 
+  /// Assets for imagesIncome
+  /// assets/images/income.svg
+  static const String imagesIncome = "assets/images/income.svg";
+
   /// Assets for imagesInvestmentsIcon
   /// assets/images/investments_icon.svg
   static const String imagesInvestmentsIcon = "assets/images/investments_icon.svg";
@@ -60,6 +72,10 @@ class Assets {
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
+
+  /// Assets for imagesMoneyTag
+  /// assets/images/money-tag.svg
+  static const String imagesMoneyTag = "assets/images/money-tag.svg";
 
   /// Assets for imagesMyPrivilegesIcon
   /// assets/images/my_privileges_icon.svg
@@ -72,6 +88,10 @@ class Assets {
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
+
+  /// Assets for imagesSaving
+  /// assets/images/saving.svg
+  static const String imagesSaving = "assets/images/saving.svg";
 
   /// Assets for imagesSearch
   /// assets/images/search.svg
