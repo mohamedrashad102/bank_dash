@@ -3,7 +3,7 @@ import 'package:gap/gap.dart';
 
 import '../helpers/size_config.dart';
 import '../utils/app_styles/app_styles.dart';
-import '../utils/coloors.dart';
+import '../utils/app_colors.dart';
 import 'custom_search_bar.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -25,12 +25,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             children: [
               IconButton(
                 onPressed: () {
-                  
                   Scaffold.of(context).openDrawer();
                 },
                 icon: const Icon(
                   Icons.menu,
-                  color: Coloors.primary1,
+                  color: AppColors.primary1,
                 ),
               ),
               Expanded(

@@ -3,7 +3,7 @@ import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart
 import 'package:bank_dash/layers/mobile_layout/transactions/views/transactions_view.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../layers/mobile_layout/account/widgets/account_view.dart';
+import '../../layers/mobile_layout/account/views/account_view.dart';
 import '../../layers/mobile_layout/credit_cards/widgets/credit_card_view.dart';
 import '../../layers/mobile_layout/investments/views/investments_view.dart';
 import '../../layers/mobile_layout/loans/views/loans_view.dart';
@@ -30,7 +30,7 @@ class AppRouter {
       ),
       GoRoute(
         path: account,
-        builder: (context, state) => const AccountView(),
+        builder: (context, state) => const AccountsView(),
       ),
       GoRoute(
         path: creditCards,
