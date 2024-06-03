@@ -11,6 +11,7 @@ class ChartHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         ChartItem(
           title: 'Debit',

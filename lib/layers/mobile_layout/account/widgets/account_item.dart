@@ -23,6 +23,7 @@ class AccountItem extends StatelessWidget {
         vertical: 20,
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           CustomIcon(
             icon: accountItemModel.icon,

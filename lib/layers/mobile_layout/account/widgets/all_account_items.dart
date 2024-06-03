@@ -30,7 +30,7 @@ class AllAccountItems extends StatelessWidget {
       bgColor: AppColors.bgColorPink,
     ),
     AccountItemModel(
-      title: 'My Investments',
+      title: 'Total Svaing',
       value: '7,900',
       icon: Assets.imagesSaving,
       bgColor: AppColors.bgColorTeal,
@@ -38,6 +38,14 @@ class AllAccountItems extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    // return Wrap(
+    //   direction: Axis.horizontal,
+    //   children: items
+    //       .map(
+    //         (e) => AccountItem(accountItemModel: e),
+    //       )
+    //       .toList(),
+    // );
     return Column(
       children: [
         Row(

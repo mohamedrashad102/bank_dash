@@ -15,6 +15,5 @@ class AppColors {
   static const Color decrementColor = Color(0xffFE5C73);
   static const Color contentColorOrange = Color(0xffFC7900);
   static const Color contentColorPink = Color(0xffFF82AC);
-
   static const Color contentColorBlue = Color(0xff1814F3);
 }
