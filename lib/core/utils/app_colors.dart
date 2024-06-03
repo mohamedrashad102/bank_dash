@@ -10,7 +10,7 @@ class AppColors {
   static const Color bgColorYellow = Color(0xffFFF5D9);
   static const Color bgColorBlue = Color(0xffE7EDFF);
   static const Color bgColorPink = Color(0xffFFE0EB);
-  static const Color bgColorTeal = Color(0xffDCFAF8);
+  static const Color bgColorCyan = Color(0xffDCFAF8);
   static const Color incrementColor = Color(0xff16DBAA);
   static const Color decrementColor = Color(0xffFE5C73);
   static const Color contentColorOrange = Color(0xffFC7900);

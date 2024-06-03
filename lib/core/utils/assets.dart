@@ -13,6 +13,10 @@ class Assets {
   /// assets/images/apple.svg
   static const String imagesApple = "assets/images/apple.svg";
 
+  /// Assets for imagesApplePink
+  /// assets/images/apple_pink.svg
+  static const String imagesApplePink = "assets/images/apple_pink.svg";
+
   /// Assets for imagesBankDashIcon
   /// assets/images/bank_dash_icon.svg
   static const String imagesBankDashIcon = "assets/images/bank_dash_icon.svg";
@@ -65,6 +69,10 @@ class Assets {
   /// assets/images/Glyph.svg
   static const String imagesGlyph = "assets/images/Glyph.svg";
 
+  /// Assets for imagesGoogle
+  /// assets/images/google.svg
+  static const String imagesGoogle = "assets/images/google.svg";
+
   /// Assets for imagesHome
   /// assets/images/home.svg
   static const String imagesHome = "assets/images/home.svg";
@@ -76,6 +84,10 @@ class Assets {
   /// Assets for imagesIncome
   /// assets/images/income.svg
   static const String imagesIncome = "assets/images/income.svg";
+
+  /// Assets for imagesInvestedAmount
+  /// assets/images/invested_amount.svg
+  static const String imagesInvestedAmount = "assets/images/invested_amount.svg";
 
   /// Assets for imagesInvestmentsIcon
   /// assets/images/investments_icon.svg
@@ -105,6 +117,10 @@ class Assets {
   /// assets/images/notification.svg
   static const String imagesNotification = "assets/images/notification.svg";
 
+  /// Assets for imagesNumberofInvestments
+  /// assets/images/numberofInvestments.svg
+  static const String imagesNumberofInvestments = "assets/images/numberofInvestments.svg";
+
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
@@ -116,6 +132,10 @@ class Assets {
   /// Assets for imagesPlaystation
   /// assets/images/playstation.svg
   static const String imagesPlaystation = "assets/images/playstation.svg";
+
+  /// Assets for imagesRateReturn
+  /// assets/images/rate_return.svg
+  static const String imagesRateReturn = "assets/images/rate_return.svg";
 
   /// Assets for imagesSaving
   /// assets/images/saving.svg
@@ -140,6 +160,14 @@ class Assets {
   /// Assets for imagesSpotify
   /// assets/images/spotify.svg
   static const String imagesSpotify = "assets/images/spotify.svg";
+
+  /// Assets for imagesTesla
+  /// assets/images/tesla.svg
+  static const String imagesTesla = "assets/images/tesla.svg";
+
+  /// Assets for imagesTotalInvest
+  /// assets/images/total_invest.svg
+  static const String imagesTotalInvest = "assets/images/total_invest.svg";
 
   /// Assets for imagesTransactionsIcon
   /// assets/images/transactions_icon.svg

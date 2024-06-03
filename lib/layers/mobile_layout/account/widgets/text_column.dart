@@ -7,9 +7,11 @@ class TextColumn extends StatelessWidget {
     super.key,
     required this.title,
     required this.value,
+    this.withoutDollar = false,
   });
   final String title;
   final String value;
+  final bool withoutDollar;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,7 +25,7 @@ class TextColumn extends StatelessWidget {
         ),
         FittedBox(
           child: Text(
-            '\$$value',
+            withoutDollar ? value : '\$$value',
             style: AppStyles.semiBold.fontSize16(context).copyWith(
                   color: const Color(
                     0xff232323,

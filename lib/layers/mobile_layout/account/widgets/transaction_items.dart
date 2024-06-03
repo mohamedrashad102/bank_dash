@@ -13,7 +13,7 @@ class TransactionItems extends StatelessWidget {
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
-      bgColor: AppColors.bgColorTeal,
+      bgColor: AppColors.bgColorCyan,
       date: '25 Jan 2021',
     ),
     CommonItemModel(

@@ -3,14 +3,16 @@ import 'package:bank_dash/layers/mobile_layout/account/widgets/text_column.dart'
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../models/account_item_model.dart';
+import '../models/financial_item_model.dart';
 
-class AccountItem extends StatelessWidget {
-  const AccountItem({
+class FinancialItem extends StatelessWidget {
+  const FinancialItem({
     super.key,
-    required this.accountItemModel,
+    required this.accountItemModel,    this.withoutDollar = false,
+
   });
-  final AccountItemModel accountItemModel;
+  final FinancialItemModel accountItemModel;  final bool withoutDollar;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +25,6 @@ class AccountItem extends StatelessWidget {
         vertical: 20,
       ),
       child: Row(
-        mainAxisSize: MainAxisSize.min,
         children: [
           CustomIcon(
             icon: accountItemModel.icon,
@@ -34,6 +35,7 @@ class AccountItem extends StatelessWidget {
             child: TextColumn(
               title: accountItemModel.title,
               value: accountItemModel.value,
+              withoutDollar: withoutDollar,
             ),
           ),
         ],

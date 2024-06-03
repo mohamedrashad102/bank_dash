@@ -29,7 +29,7 @@ class CreditCardWidget extends StatelessWidget {
             ),
           ),
           padding: const EdgeInsets.all(20),
-          margin: const EdgeInsets.symmetric(horizontal: 5),
+          // margin: const EdgeInsets.symmetric(horizontal: 2),
           child: CreditCardContent(card: card),
         ),
         const ContainerWithOpacity(),

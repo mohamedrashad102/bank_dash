@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AccountItemModel {
+class FinancialItemModel {
   final String title;
   final String value;
   final String icon;
   final Color bgColor;
-  AccountItemModel({
+  FinancialItemModel({
     required this.title,
     required this.value,
     required this.icon,
