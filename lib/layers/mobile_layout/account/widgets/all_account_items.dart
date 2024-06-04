@@ -1,5 +1,5 @@
-import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/core/models/financial_item_model.dart';
+import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/core/widgets/financial_item.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -33,7 +33,7 @@ class AllAccountItems extends StatelessWidget {
       title: 'Total Svaing',
       value: '7,900',
       icon: Assets.imagesSaving,
-      bgColor: AppColors.bgColorCyan,
+      bgColor: AppColors.bgColorMintGreen,
     ),
   ];
   @override

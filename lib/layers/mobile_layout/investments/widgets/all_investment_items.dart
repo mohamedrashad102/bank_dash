@@ -1,6 +1,6 @@
+import 'package:bank_dash/core/models/financial_item_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
-import 'package:bank_dash/core/models/financial_item_model.dart';
 import 'package:bank_dash/core/widgets/financial_item.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class AllInvestmentItems extends StatelessWidget {
       title: 'Total Invested Amount',
       value: '150,000',
       icon: Assets.imagesInvestedAmount,
-      bgColor: AppColors.bgColorCyan,
+      bgColor: AppColors.bgColorMintGreen,
     ),
     FinancialItemModel(
       title: 'Number of Investments',

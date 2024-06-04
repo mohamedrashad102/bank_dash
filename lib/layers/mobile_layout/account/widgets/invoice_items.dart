@@ -12,7 +12,7 @@ class InvoiceItems extends StatelessWidget {
     CommonItemModel(
       title: 'Apple Store',
       amount: '450',
-      bgColor: AppColors.bgColorCyan,
+      bgColor: AppColors.bgColorMintGreen,
       icon: Assets.imagesApple,
       date: '5h ago',
     ),
