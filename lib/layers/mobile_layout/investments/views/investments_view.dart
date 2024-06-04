@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
-import '../../../../core/widgets/title_text.dart';
 import '../widgets/all_investment_items.dart';
 import '../widgets/my_investment_section.dart';
 import '../widgets/total_investment_section.dart';

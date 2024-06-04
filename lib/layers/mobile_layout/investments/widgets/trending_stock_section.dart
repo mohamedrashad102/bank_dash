@@ -21,7 +21,7 @@ class TrendingStockSection extends StatelessWidget {
         const Gap(12),
         Container(
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 37, 18, 18),
+            color: Colors.white,
             borderRadius: BorderRadius.circular(15),
           ),
           padding: const EdgeInsets.only(left: 20, right: 20, top: 17),
@@ -57,7 +57,7 @@ class TableContent extends StatelessWidget {
     ),
     TableItemModel(
       slNo: '03',
-      name: 'Uber Food',
+      name: 'Apple',
       price: '350',
       returnValue: '-3%',
     ),
