@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'core/utils/scroll_behaviour.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(
@@ -30,6 +32,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
+        scrollBehavior: CustomScrollBehavior(),
         debugShowCheckedModeBanner: false,
         routerConfig: AppRouter.router,
         theme: lightTheme,
