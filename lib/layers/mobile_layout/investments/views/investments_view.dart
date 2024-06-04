@@ -7,6 +7,7 @@ import '../../../../core/widgets/title_text.dart';
 import '../widgets/all_investment_items.dart';
 import '../widgets/my_investment_section.dart';
 import '../widgets/total_investment_section.dart';
+import '../widgets/trending_stock_section.dart';
 
 class InvestmentsView extends StatelessWidget {
   const InvestmentsView({super.key});
@@ -28,27 +29,11 @@ class InvestmentsView extends StatelessWidget {
               Gap(22),
               MyInvestmentSection(),
               Gap(22),
+              TrendingStockSection()
             ],
           ),
         ),
       ),
-    );
-  }
-}
-
-class TrendingStockSection extends StatelessWidget {
-  const TrendingStockSection({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        TitleText(title: 'My Investment'),
-        Gap(12),
-      ],
     );
   }
 }
