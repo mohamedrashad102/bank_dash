@@ -1,9 +1,10 @@
+import 'package:bank_dash/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../helpers/size_config.dart';
-import '../utils/app_styles/app_styles.dart';
 import '../utils/app_colors.dart';
+import '../utils/app_styles/app_styles.dart';
 import 'custom_search_bar.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -39,7 +40,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   style: AppStyles.semiBold.fontSize20(context),
                 ),
               ),
-              const CircleAvatar(),
+              const CircleAvatar(
+                backgroundImage: AssetImage(
+                  Assets.imagesUs,
+                ),
+              ),
             ],
           ),
           const Gap(20),

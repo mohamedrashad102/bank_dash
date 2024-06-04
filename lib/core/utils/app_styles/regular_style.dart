@@ -6,7 +6,7 @@ class RegularStyle {
     return TextStyle(
       color: color,
       fontSize: fontSize,
-      fontFamily: 'Montserrat',
+      fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
     );
   }

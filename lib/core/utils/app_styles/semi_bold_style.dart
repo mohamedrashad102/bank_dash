@@ -6,7 +6,7 @@ class SemiBoldStyle {
     return TextStyle(
       color: color,
       fontSize: fontSize,
-      fontFamily: 'Montserrat',
+      fontFamily: 'Inter',
       fontWeight: FontWeight.w600,
     );
   }
@@ -29,6 +29,12 @@ class SemiBoldStyle {
     return _base(
       color: const Color(0xFF343C6A),
       fontSize: getFontSize(context, 16),
+    );
+  }
+TextStyle fontSize14(BuildContext context) {
+    return _base(
+      color: const Color(0xFF343C6A),
+      fontSize: getFontSize(context, 14),
     );
   }
 
