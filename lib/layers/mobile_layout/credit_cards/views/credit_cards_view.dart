@@ -1,12 +1,14 @@
-import 'package:expandable_page_view/expandable_page_view.dart';
+import 'package:bank_dash/core/utils/app_colors.dart';
+import 'package:bank_dash/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/models/credit_card_model.dart';
-import '../../../../core/widgets/credit_card_widget.dart';
 import '../../../../core/widgets/custom_scaffold.dart';
 import '../../../../core/widgets/title_text.dart';
+import '../models/card_model.dart';
+import '../widgets/card_expense_statistics_scetion.dart';
+import '../widgets/card_item.dart';
+import '../widgets/my_credit_cards_section.dart';
 
 class CreditCardsView extends StatelessWidget {
   const CreditCardsView({super.key});
@@ -22,7 +24,9 @@ class CreditCardsView extends StatelessWidget {
             children: [
               MyCreditCardsSection(),
               Gap(22),
-              TitleText(title: 'Card Expense Statistics'),
+              CardExpenseStatisticsScetion(),
+              Gap(22),
+              CardListSection(),
             ],
           ),
         ),
@@ -31,74 +35,59 @@ class CreditCardsView extends StatelessWidget {
   }
 }
 
-class MyCreditCardsSection extends StatelessWidget {
-  const MyCreditCardsSection({
+class CardListSection extends StatelessWidget {
+  const CardListSection({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TitleText(title: 'My Cards'),
+        TitleText(title: 'Card List'),
         Gap(12),
-        MyCreditCards(),
+        CardsList(),
       ],
     );
   }
 }
 
-class MyCreditCards extends StatelessWidget {
-  const MyCreditCards({
+class CardsList extends StatelessWidget {
+  const CardsList({
     super.key,
   });
-  static List<CreditCardModel> cards = [
-    CreditCardModel(
-      balance: '1.25',
-      cardHolder: 'αвᴅεℓ мαвσυᴅ 🪐',
-      validThru: '12/22',
-      cardNumber: '3142 1293 4394 9243',
-      gradientColors: const [
-        Color(0xFF01121B),
-        Color(0xFF0A06F4),
-      ],
+  static List<CardModel> cardModels = [
+    CardModel(
+      icon: Assets.imagesCreditCardBlue,
+      bgColor: AppColors.bgColorBlue,
+      cardType: 'Secondary',
+      bank: 'DBL Bank',
     ),
-    CreditCardModel(
-      balance: '1281.3',
-      cardHolder: 'hma Rashd',
-      validThru: '12/22',
-      cardNumber: '3142 1293 4394 9243',
-      gradientColors: const [
-        Color(0xFF2D60FF),
-        Color(0xFF539BFF),
-      ],
+    CardModel(
+      icon: Assets.imagesCreditCardPink,
+      bgColor: AppColors.bgColorPink,
+      cardType: 'Secondary',
+      bank: 'BRC Bank',
     ),
-    CreditCardModel(
-      balance: '1281.3',
-      cardHolder: 'Abdo',
-      validThru: '12/22',
-      cardNumber: '3142 1293 4394 9243',
-      gradientColors: const [
-        Color(0xFF4C49ED),
-        Color(0xFF0A06F4),
-      ],
+    CardModel(
+      icon: Assets.imagesCreditCardYellow,
+      bgColor: AppColors.bgColorYellow,
+      cardType: 'Secondary',
+      bank: 'ABM Bank',
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
-    return ExpandablePageView.builder(
-      clipBehavior: Clip.none,
-      controller: PageController(viewportFraction: 0.99),
-      itemBuilder: (context, index) => Padding(
-        padding: index == cards.length - 1
-            ? EdgeInsets.zero
-            : const EdgeInsets.only(right: 10.0),
-        child: CreditCardWidget(
-          card: cards[index],
-        ),
-      ),
-      itemCount: cards.length,
+    return Column(
+      children: cardModels
+          .map(
+            (e) => Padding(
+              padding: const EdgeInsets.only(bottom: 10.0),
+              child: CardItem(cardModel: e),
+            ),
+          )
+          .toList(),
     );
   }
 }

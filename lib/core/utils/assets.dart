@@ -29,6 +29,10 @@ class Assets {
   /// assets/images/chart.svg
   static const String imagesChart = "assets/images/chart.svg";
 
+  /// Assets for imagesChartExpenses
+  /// assets/images/chart_expenses.svg
+  static const String imagesChartExpenses = "assets/images/chart_expenses.svg";
+
   /// Assets for imagesChipCard
   /// assets/images/Chip_Card.svg
   static const String imagesChipCard = "assets/images/Chip_Card.svg";
@@ -40,6 +44,18 @@ class Assets {
   /// Assets for imagesChipCardPng
   /// assets/images/Chip_Card_png.png
   static const String imagesChipCardPng = "assets/images/Chip_Card_png.png";
+
+  /// Assets for imagesCreditCardBlue
+  /// assets/images/credit-card_blue.svg
+  static const String imagesCreditCardBlue = "assets/images/credit-card_blue.svg";
+
+  /// Assets for imagesCreditCardPink
+  /// assets/images/credit-card_pink.svg
+  static const String imagesCreditCardPink = "assets/images/credit-card_pink.svg";
+
+  /// Assets for imagesCreditCardYellow
+  /// assets/images/credit-card_yellow.svg
+  static const String imagesCreditCardYellow = "assets/images/credit-card_yellow.svg";
 
   /// Assets for imagesCreditCardsIcon
   /// assets/images/credit_cards_icon.svg
