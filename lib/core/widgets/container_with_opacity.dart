@@ -9,7 +9,6 @@ class ContainerWithOpacity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      width: double.infinity,
       height: 61,
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(.15),
