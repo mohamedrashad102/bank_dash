@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 class CardModel {
   final String icon;
   final Color bgColor;
-  final String cardType;
-  final String bank;
+  final String? SubTitle;
+  final String? label;
+  final String? bank;
 
   CardModel({
     required this.icon,
     required this.bgColor,
-    required this.cardType,
-    required this.bank,
+    required this.SubTitle,
+    this.bank,
+    this.label,
   });
 }

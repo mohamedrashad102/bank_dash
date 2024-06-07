@@ -27,6 +27,7 @@ class FinancialItem extends StatelessWidget {
       child: Row(
         children: [
           CustomIcon(
+            isCircle: true,
             icon: accountItemModel.icon,
             bgColor: accountItemModel.bgColor,
           ),

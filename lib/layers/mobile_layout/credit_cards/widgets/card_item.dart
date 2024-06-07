@@ -30,11 +30,11 @@ class CardItem extends StatelessWidget {
           ),
           CustomTextColumn(
             label: 'Card Type',
-            data: cardModel.cardType,
+            data: cardModel.SubTitle!,
           ),
           CustomTextColumn(
             label: 'Bank',
-            data: cardModel.bank,
+            data: cardModel.bank!,
           ),
           Text(
             'view details',

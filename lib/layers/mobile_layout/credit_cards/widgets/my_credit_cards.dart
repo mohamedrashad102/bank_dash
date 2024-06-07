@@ -10,7 +10,7 @@ class MyCreditCards extends StatelessWidget {
   static List<CreditCardModel> cards = [
     CreditCardModel(
       balance: '1.25',
-      cardHolder: 'αвᴅεℓ мαвσυᴅ 🪐',
+      cardHolder: 'αвdεℓ мαвσυd 🪐',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
       gradientColors: const [

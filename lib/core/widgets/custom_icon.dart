@@ -6,16 +6,17 @@ class CustomIcon extends StatelessWidget {
     super.key,
     required this.icon,
     required this.bgColor,
+    this.isCircle = false,
   });
   final String icon;
   final Color bgColor;
-
+  final bool isCircle;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         color: bgColor,
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(isCircle ? 50 : 12),
       ),
       padding: const EdgeInsets.all(12),
       child: SvgPicture.asset(
