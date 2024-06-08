@@ -52,13 +52,13 @@ class AllAccountItems extends StatelessWidget {
           children: [
             Expanded(
               child: FinancialItem(
-                accountItemModel: items[0],
+                financialItemModel: items[0],
               ),
             ),
             const Gap(15),
             Expanded(
               child: FinancialItem(
-                accountItemModel: items[1],
+                financialItemModel: items[1],
               ),
             )
           ],
@@ -68,13 +68,13 @@ class AllAccountItems extends StatelessWidget {
           children: [
             Expanded(
               child: FinancialItem(
-                accountItemModel: items[2],
+                financialItemModel: items[2],
               ),
             ),
             const Gap(15),
             Expanded(
               child: FinancialItem(
-                accountItemModel: items[3],
+                financialItemModel: items[3],
               ),
             )
           ],

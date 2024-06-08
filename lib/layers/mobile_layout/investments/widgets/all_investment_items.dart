@@ -41,9 +41,12 @@ class AllInvestmentItems extends StatelessWidget {
     return Column(
       children: items
           .map(
-            (e) => FinancialItem(
-              accountItemModel: e,
-              withoutDollar: e.value.contains('+'),
+            (e) => Padding(
+              padding: const EdgeInsets.only(bottom: 15.0),
+              child: FinancialItem(
+                financialItemModel: e,
+                withoutDollar: e.value.contains('+'),
+              ),
             ),
           )
           .toList(),
