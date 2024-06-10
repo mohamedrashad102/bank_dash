@@ -8,7 +8,7 @@ class CustomTextColumn extends StatelessWidget {
     required this.label,
     required this.data,
   });
-  final String label;
+  final String? label;
   final String data;
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CustomTextColumn extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          label,
+          label ?? '',
           style: AppStyles.medium.fontSize14(context),
         ),
         const Gap(4),

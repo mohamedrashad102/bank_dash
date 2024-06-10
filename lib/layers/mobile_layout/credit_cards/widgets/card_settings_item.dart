@@ -21,7 +21,7 @@ class CardSettingsItem extends StatelessWidget {
         const Gap(12),
         CustomTextColumn(
           label: cardModel.label!,
-          data: cardModel.SubTitle!,
+          data: cardModel.subTitle!,
         ),
       ],
     );

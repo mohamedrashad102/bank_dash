@@ -141,9 +141,17 @@ class Assets {
   /// assets/images/investments_icon.svg
   static const String imagesInvestmentsIcon = "assets/images/investments_icon.svg";
 
+  /// Assets for imagesLifeInsurance
+  /// assets/images/life-insurance.svg
+  static const String imagesLifeInsurance = "assets/images/life-insurance.svg";
+
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
+
+  /// Assets for imagesLoansPink
+  /// assets/images/loans_pink.svg
+  static const String imagesLoansPink = "assets/images/loans_pink.svg";
 
   /// Assets for imagesLogo
   /// assets/images/logo.png
@@ -193,6 +201,10 @@ class Assets {
   /// assets/images/rate_return.svg
   static const String imagesRateReturn = "assets/images/rate_return.svg";
 
+  /// Assets for imagesSafety
+  /// assets/images/safety.svg
+  static const String imagesSafety = "assets/images/safety.svg";
+
   /// Assets for imagesSaving
   /// assets/images/saving.svg
   static const String imagesSaving = "assets/images/saving.svg";
@@ -212,6 +224,10 @@ class Assets {
   /// Assets for imagesSettings
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
+
+  /// Assets for imagesShopping
+  /// assets/images/shopping.svg
+  static const String imagesShopping = "assets/images/shopping.svg";
 
   /// Assets for imagesSpotify
   /// assets/images/spotify.svg

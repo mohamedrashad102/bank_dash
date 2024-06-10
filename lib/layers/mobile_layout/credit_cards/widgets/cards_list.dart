@@ -1,6 +1,6 @@
+import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
-import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:bank_dash/layers/mobile_layout/credit_cards/widgets/card_item.dart';
 import 'package:flutter/material.dart';
 
@@ -12,19 +12,19 @@ class CardsList extends StatelessWidget {
     CardModel(
       icon: Assets.imagesCreditCardBlue,
       bgColor: AppColors.bgColorBlue,
-      SubTitle: 'Secondary',
+      subTitle: 'Secondary',
       bank: 'DBL Bank',
     ),
     CardModel(
       icon: Assets.imagesCreditCardPink,
       bgColor: AppColors.bgColorPink,
-      SubTitle: 'Secondary',
+      subTitle: 'Secondary',
       bank: 'BRC Bank',
     ),
     CardModel(
       icon: Assets.imagesCreditCardYellow,
       bgColor: AppColors.bgColorYellow,
-      SubTitle: 'Secondary',
+      subTitle: 'Secondary',
       bank: 'ABM Bank',
     ),
   ];

@@ -15,35 +15,35 @@ class CardSettingsItemList extends StatelessWidget {
       icon: Assets
           .imagesBlockCard, // Replace with the actual asset path for the icon
       label: 'Block Card',
-      SubTitle: 'Instantly block your card',
+      subTitle: 'Instantly block your card',
     ),
     CardModel(
       bgColor: AppColors.bgColorBlue,
       icon: Assets
           .imagesPicCode, // Replace with the actual asset path for the icon
       label: 'Change Pic Code',
-      SubTitle: 'Withdraw without any card',
+      subTitle: 'Withdraw without any card',
     ),
     CardModel(
       bgColor: AppColors.bgColorPink,
       icon: Assets
           .imagesGooglePink, // Replace with the actual asset path for the icon
       label: 'Add to Google Pay',
-      SubTitle: 'Withdraw without any card',
+      subTitle: 'Withdraw without any card',
     ),
     CardModel(
       bgColor: AppColors.bgColorMintGreen,
       icon:
           Assets.imagesApple, // Replace with the actual asset path for the icon
       label: 'Add to Apple Pay',
-      SubTitle: 'Withdraw without any card',
+      subTitle: 'Withdraw without any card',
     ),
     CardModel(
       bgColor: AppColors.bgColorMintGreen,
       icon:
           Assets.imagesApple, // Replace with the actual asset path for the icon
       label: 'Add to Apple Store',
-      SubTitle: 'Withdraw without any card',
+      subTitle: 'Withdraw without any card',
     ),
   ];
 
@@ -52,7 +52,7 @@ class CardSettingsItemList extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color:  Colors.white,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Column(
