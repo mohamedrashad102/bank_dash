@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../layers/mobile_layout/account/views/account_view.dart';
-import '../../../layers/mobile_layout/credit_cards/widgets/credit_card_view.dart';
+import '../../../layers/mobile_layout/credit_cards/views/credit_cards_view.dart';
 import '../../../layers/mobile_layout/investments/views/investments_view.dart';
 import '../../../layers/mobile_layout/loans/views/loans_view.dart';
 import '../../../layers/mobile_layout/my_privileges/views/my_privileges_view.dart';
@@ -50,7 +50,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
       title: 'Credit Cards',
       icon: Assets.imagesCreditCardsIcon,
       path: AppRouter.creditCards,
-      view: CreditCardView(),
+      view: CreditCardsView(),
     ),
     DrawerModel(
       title: 'Loans',

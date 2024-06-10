@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-TooltipBehavior buildTip({required String header,required Color color}) {
+TooltipBehavior buildTip({required String header, required Color color}) {
   return TooltipBehavior(
     enable: true,
     header: header,

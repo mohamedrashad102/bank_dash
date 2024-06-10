@@ -13,9 +13,17 @@ class Assets {
   /// assets/images/apple.svg
   static const String imagesApple = "assets/images/apple.svg";
 
+  /// Assets for imagesAppleMintGreen
+  /// assets/images/apple_mintGreen.svg
+  static const String imagesAppleMintGreen = "assets/images/apple_mintGreen.svg";
+
   /// Assets for imagesApplePink
   /// assets/images/apple_pink.svg
   static const String imagesApplePink = "assets/images/apple_pink.svg";
+
+  /// Assets for imagesBagLoans
+  /// assets/images/bag_loans.svg
+  static const String imagesBagLoans = "assets/images/bag_loans.svg";
 
   /// Assets for imagesBankDashIcon
   /// assets/images/bank_dash_icon.svg
@@ -25,9 +33,29 @@ class Assets {
   /// assets/images/bank_dash_logo.png
   static const String imagesBankDashLogo = "assets/images/bank_dash_logo.png";
 
+  /// Assets for imagesBankDashTitle
+  /// assets/images/bank_dash_title.svg
+  static const String imagesBankDashTitle = "assets/images/bank_dash_title.svg";
+
+  /// Assets for imagesBlockCard
+  /// assets/images/block_card.svg
+  static const String imagesBlockCard = "assets/images/block_card.svg";
+
+  /// Assets for imagesBluePerson
+  /// assets/images/blue_person.svg
+  static const String imagesBluePerson = "assets/images/blue_person.svg";
+
+  /// Assets for imagesBusinessLoansPink
+  /// assets/images/business_loans_pink.svg
+  static const String imagesBusinessLoansPink = "assets/images/business_loans_pink.svg";
+
   /// Assets for imagesChart
   /// assets/images/chart.svg
   static const String imagesChart = "assets/images/chart.svg";
+
+  /// Assets for imagesChartExpenses
+  /// assets/images/chart_expenses.svg
+  static const String imagesChartExpenses = "assets/images/chart_expenses.svg";
 
   /// Assets for imagesChipCard
   /// assets/images/Chip_Card.svg
@@ -41,9 +69,25 @@ class Assets {
   /// assets/images/Chip_Card_png.png
   static const String imagesChipCardPng = "assets/images/Chip_Card_png.png";
 
+  /// Assets for imagesCreditCardBlue
+  /// assets/images/credit-card_blue.svg
+  static const String imagesCreditCardBlue = "assets/images/credit-card_blue.svg";
+
+  /// Assets for imagesCreditCardPink
+  /// assets/images/credit-card_pink.svg
+  static const String imagesCreditCardPink = "assets/images/credit-card_pink.svg";
+
+  /// Assets for imagesCreditCardYellow
+  /// assets/images/credit-card_yellow.svg
+  static const String imagesCreditCardYellow = "assets/images/credit-card_yellow.svg";
+
   /// Assets for imagesCreditCardsIcon
   /// assets/images/credit_cards_icon.svg
   static const String imagesCreditCardsIcon = "assets/images/credit_cards_icon.svg";
+
+  /// Assets for imagesCustomLoans
+  /// assets/images/custom_loans.svg
+  static const String imagesCustomLoans = "assets/images/custom_loans.svg";
 
   /// Assets for imagesDarkMasterCard
   /// assets/images/dark_master_card.svg
@@ -73,6 +117,10 @@ class Assets {
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
 
+  /// Assets for imagesGooglePink
+  /// assets/images/google_pink.svg
+  static const String imagesGooglePink = "assets/images/google_pink.svg";
+
   /// Assets for imagesHome
   /// assets/images/home.svg
   static const String imagesHome = "assets/images/home.svg";
@@ -93,9 +141,21 @@ class Assets {
   /// assets/images/investments_icon.svg
   static const String imagesInvestmentsIcon = "assets/images/investments_icon.svg";
 
+  /// Assets for imagesLifeInsurance
+  /// assets/images/life-insurance.svg
+  static const String imagesLifeInsurance = "assets/images/life-insurance.svg";
+
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
+
+  /// Assets for imagesLoansPink
+  /// assets/images/loans_pink.svg
+  static const String imagesLoansPink = "assets/images/loans_pink.svg";
+
+  /// Assets for imagesLogo
+  /// assets/images/logo.png
+  static const String imagesLogo = "assets/images/logo.png";
 
   /// Assets for imagesMasterCard
   /// assets/images/master_card.svg
@@ -125,6 +185,10 @@ class Assets {
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
 
+  /// Assets for imagesPicCode
+  /// assets/images/pic_code.svg
+  static const String imagesPicCode = "assets/images/pic_code.svg";
+
   /// Assets for imagesPinkPerson
   /// assets/images/pink_person.svg
   static const String imagesPinkPerson = "assets/images/pink_person.svg";
@@ -136,6 +200,10 @@ class Assets {
   /// Assets for imagesRateReturn
   /// assets/images/rate_return.svg
   static const String imagesRateReturn = "assets/images/rate_return.svg";
+
+  /// Assets for imagesSafety
+  /// assets/images/safety.svg
+  static const String imagesSafety = "assets/images/safety.svg";
 
   /// Assets for imagesSaving
   /// assets/images/saving.svg
@@ -156,6 +224,10 @@ class Assets {
   /// Assets for imagesSettings
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
+
+  /// Assets for imagesShopping
+  /// assets/images/shopping.svg
+  static const String imagesShopping = "assets/images/shopping.svg";
 
   /// Assets for imagesSpotify
   /// assets/images/spotify.svg

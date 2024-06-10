@@ -15,18 +15,30 @@ class MyCards extends StatelessWidget {
       cardHolder: 'card Holder',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
+      gradientColors: const [
+        Color(0xFF4C49ED),
+        Color(0xFF0A06F4),
+      ],
     ),
     CreditCardModel(
       balance: '1281.3',
       cardHolder: 'card Holder',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
+      gradientColors: const [
+        Color(0xFF4C49ED),
+        Color(0xFF0A06F4),
+      ],
     ),
     CreditCardModel(
       balance: '1281.3',
       cardHolder: 'card Holder',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
+      gradientColors: const [
+        Color(0xFF4C49ED),
+        Color(0xFF0A06F4),
+      ],
     ),
   ];
 
@@ -52,10 +64,6 @@ class MyCards extends StatelessWidget {
           child: PageView.builder(
             itemBuilder: (context, index) => CreditCardWidget(
               card: cards[index],
-              gradientColors: const [
-                Color(0xFF4C49ED),
-                Color(0xFF0A06F4),
-              ],
             ),
             itemCount: cards.length,
           ),

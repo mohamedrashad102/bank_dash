@@ -8,33 +8,35 @@ import '../models/financial_item_model.dart';
 class FinancialItem extends StatelessWidget {
   const FinancialItem({
     super.key,
-    required this.accountItemModel,    this.withoutDollar = false,
-
+    required this.financialItemModel,
+    this.withoutDollar = false,
   });
-  final FinancialItemModel accountItemModel;  final bool withoutDollar;
+  final FinancialItemModel financialItemModel;
+  final bool withoutDollar;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: const Color(0xFFFFFFFF),
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.symmetric(
-        horizontal: 10,
-        vertical: 20,
+        horizontal: 20,
+        vertical: 18,
       ),
       child: Row(
         children: [
           CustomIcon(
-            icon: accountItemModel.icon,
-            bgColor: accountItemModel.bgColor,
+            isCircle: true,
+            icon: financialItemModel.icon,
+            bgColor: financialItemModel.bgColor,
           ),
           const Gap(10),
           Flexible(
             child: TextColumn(
-              title: accountItemModel.title,
-              value: accountItemModel.value,
+              title: financialItemModel.title,
+              value: financialItemModel.value,
               withoutDollar: withoutDollar,
             ),
           ),

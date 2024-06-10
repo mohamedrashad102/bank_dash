@@ -7,9 +7,11 @@ class ChartItem extends StatelessWidget {
     super.key,
     required this.title,
     required this.color,
+    this.isCircle = false,
   });
   final String title;
   final Color color;
+  final bool isCircle;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,8 +21,8 @@ class ChartItem extends StatelessWidget {
           width: 12,
           decoration: BoxDecoration(
             color: color,
-            borderRadius: const BorderRadius.all(
-              Radius.circular(4),
+            borderRadius: BorderRadius.all(
+              Radius.circular(isCircle ? 50 : 4),
             ),
           ),
         ),

@@ -11,6 +11,13 @@ class BoldStyle {
     );
   }
 
+  TextStyle fontSize12(BuildContext context) {
+    return _base(
+      color: const Color(0xFF4EB7F2),
+      fontSize: getFontSize(context, 12),
+    );
+  }
+
   TextStyle fontSize16(BuildContext context) {
     return _base(
       color: const Color(0xFF4EB7F2),

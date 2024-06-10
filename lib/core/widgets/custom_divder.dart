@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TableDivder extends StatelessWidget {
-  const TableDivder({
+class CustomDivider extends StatelessWidget {
+  const CustomDivider({
     super.key,
   });
 

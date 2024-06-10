@@ -1,6 +1,7 @@
 import 'package:bank_dash/core/models/credit_card_model.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class CreditCardMiddleSection extends StatelessWidget {
@@ -36,11 +37,13 @@ class CreditCardMiddleSection extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'VALID THRU',
-              style: AppStyles.regular
-                  .fontSize12(context)
-                  .copyWith(color: Colors.white.withOpacity(0.7)),
+            FittedBox(
+              child: Text(
+                'VALID',
+                style: AppStyles.regular
+                    .fontSize12(context)
+                    .copyWith(color: Colors.white.withOpacity(0.7)),
+              ),
             ),
             Text(
               card.validThru,

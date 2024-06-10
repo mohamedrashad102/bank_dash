@@ -2,33 +2,31 @@ import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
 import 'package:bank_dash/core/models/drawer_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
+import 'package:bank_dash/core/widgets/custom_divder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
-import '../utils/assets.dart';
+import 'dash_logo.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return const Drawer(
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Gap(15),
-            Row(
-              children: [
-                const Gap(40),
-                Image.asset(Assets.imagesBankDashLogo),
-              ],
+            SafeArea(
+              bottom: false,
+              child: DashLogo(),
             ),
-            const Gap(50),
-            const DrawerListView(),
+            CustomDivider(),
+            DrawerListView(),
           ],
         ),
       ),

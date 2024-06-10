@@ -6,11 +6,9 @@ import 'credit_card_content.dart';
 
 class CreditCardWidget extends StatelessWidget {
   final CreditCardModel card;
-  final List<Color> gradientColors;
   const CreditCardWidget({
     super.key,
     required this.card,
-    required this.gradientColors,
   });
 
   @override
@@ -19,11 +17,10 @@ class CreditCardWidget extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       children: [
         Container(
-          width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             gradient: LinearGradient(
-              colors: gradientColors,
+              colors: card.gradientColors,
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),

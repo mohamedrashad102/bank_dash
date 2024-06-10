@@ -5,8 +5,8 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/models/credit_card_model.dart';
 
-class MyCardsSection extends StatelessWidget {
-  const MyCardsSection({
+class MyCardsAccountSection extends StatelessWidget {
+  const MyCardsAccountSection({
     super.key,
   });
 
@@ -17,16 +17,17 @@ class MyCardsSection extends StatelessWidget {
         const MyCardsTitle(),
         const Gap(12),
         CreditCardWidget(
-            card: CreditCardModel(
-              balance: '5,756',
-              cardHolder: 'Abboud',
-              validThru: '12/24',
-              cardNumber: '3778 **** **** 1234',
-            ),
+          card: CreditCardModel(
+            balance: '5,756',
+            cardHolder: 'Abboud',
+            validThru: '12/24',
+            cardNumber: '3778 **** **** 1234',
             gradientColors: const [
               Color(0xFF2D60FF),
               Color(0xFF539BFF),
-            ])
+            ],
+          ),
+        )
       ],
     );
   }
