@@ -33,6 +33,10 @@ class Assets {
   /// assets/images/bank_dash_logo.png
   static const String imagesBankDashLogo = "assets/images/bank_dash_logo.png";
 
+  /// Assets for imagesBankDashTitle
+  /// assets/images/bank_dash_title.svg
+  static const String imagesBankDashTitle = "assets/images/bank_dash_title.svg";
+
   /// Assets for imagesBlockCard
   /// assets/images/block_card.svg
   static const String imagesBlockCard = "assets/images/block_card.svg";
@@ -140,6 +144,10 @@ class Assets {
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
+
+  /// Assets for imagesLogo
+  /// assets/images/logo.png
+  static const String imagesLogo = "assets/images/logo.png";
 
   /// Assets for imagesMasterCard
   /// assets/images/master_card.svg
