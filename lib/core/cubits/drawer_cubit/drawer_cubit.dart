@@ -20,10 +20,10 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
   DrawerCubit() : super(DrawerInitial());
 
   int selectedIndex = 0;
-
-  final List<DrawerModel> drawerItems = const [
+  String title = 'OverView';
+  final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
-      title: 'Dashboard',
+      title: 'Overview',
       icon: Assets.imagesHomeIcon,
       path: AppRouter.overview,
       view: OverviewView(),
@@ -77,13 +77,61 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
       view: SettingsView(),
     ),
   ];
-
+  final List<DrawerModel> desktopDrawerItems = const [
+    DrawerModel(
+      title: 'Overview',
+      icon: Assets.imagesHomeIcon,
+      view: OverviewView(),
+    ),
+    DrawerModel(
+      title: 'Transactions',
+      icon: Assets.imagesTransactionsIcon,
+      view: TransactionsView(),
+    ),
+    DrawerModel(
+      title: 'Accounts',
+      icon: Assets.imagesAccountIcon,
+      view: AccountsView(),
+    ),
+    DrawerModel(
+      title: 'Investments',
+      icon: Assets.imagesInvestmentsIcon,
+      view: InvestmentsView(),
+    ),
+    DrawerModel(
+      title: 'Credit Cards',
+      icon: Assets.imagesCreditCardsIcon,
+      view: CreditCardsView(),
+    ),
+    DrawerModel(
+      title: 'Loans',
+      icon: Assets.imagesLoansIcon,
+      view: LoansView(),
+    ),
+    DrawerModel(
+      title: 'Services',
+      icon: Assets.imagesService,
+      view: ServicesView(),
+    ),
+    DrawerModel(
+      title: 'My Privileges',
+      icon: Assets.imagesMyPrivilegesIcon,
+      view: MyPrivilegesView(),
+    ),
+    DrawerModel(
+      title: 'Settings',
+      icon: Assets.imagesSettings,
+      view: SettingsView(),
+    ),
+  ];
   static DrawerCubit get(context) => BlocProvider.of(context);
 
   void changeDrawer(int index) {
     selectedIndex = index;
+    title = desktopDrawerItems[selectedIndex].title;
     emit(DrawerChanged());
   }
 
-  Widget currentView() => drawerItems[selectedIndex].view;
+  Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
+  Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
 }

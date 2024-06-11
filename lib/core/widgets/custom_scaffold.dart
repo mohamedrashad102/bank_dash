@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'custom_app_bar.dart';
 import 'custom_drawer.dart';
 
-class CustomScaffold extends StatelessWidget {
-  const CustomScaffold({
+class MobileCustomScaffold extends StatelessWidget {
+  const MobileCustomScaffold({
     super.key,
     required this.title,
     this.body,
@@ -16,7 +16,9 @@ class CustomScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: title),
-      drawer: const CustomDrawer(),
+      drawer: const CustomDrawer(
+        platformNumber: 1,
+      ),
       body: body,
     );
   }

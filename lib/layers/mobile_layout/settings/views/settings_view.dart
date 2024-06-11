@@ -1,6 +1,5 @@
 import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
@@ -12,7 +11,7 @@ class SettingsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScaffold(
+    return MobileCustomScaffold(
       title: 'Settings',
       body: Container(
         padding: const EdgeInsets.all(20),
