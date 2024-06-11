@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
-import '../widgets/account_view_body.dart';
+import '../../../mobile_layout/account/widgets/account_view_body.dart';
 
 class AccountsView extends StatelessWidget {
   const AccountsView({super.key});

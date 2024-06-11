@@ -1,10 +1,6 @@
 class Assets {
   Assets._();
   
-  /// Assets for imagesAbdo
-  /// assets/images/abdo.jpg
-  static const String imagesAbdo = "assets/images/abdo.jpg";
-
   /// Assets for imagesAccountIcon
   /// assets/images/account_icon.svg
   static const String imagesAccountIcon = "assets/images/account_icon.svg";
@@ -185,6 +181,10 @@ class Assets {
   /// assets/images/notification.svg
   static const String imagesNotification = "assets/images/notification.svg";
 
+  /// Assets for imagesNotificationAvatar
+  /// assets/images/notification_avatar.svg
+  static const String imagesNotificationAvatar = "assets/images/notification_avatar.svg";
+
   /// Assets for imagesNumberofInvestments
   /// assets/images/numberofInvestments.svg
   static const String imagesNumberofInvestments = "assets/images/numberofInvestments.svg";
@@ -232,6 +232,10 @@ class Assets {
   /// Assets for imagesSettings
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
+
+  /// Assets for imagesSettingsAvatar
+  /// assets/images/settings_avatar.svg
+  static const String imagesSettingsAvatar = "assets/images/settings_avatar.svg";
 
   /// Assets for imagesShopping
   /// assets/images/shopping.svg
