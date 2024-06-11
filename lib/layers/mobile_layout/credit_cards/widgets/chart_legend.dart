@@ -10,7 +10,8 @@ class ChartLegend extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return const Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Legend1(),
         Gap(12),

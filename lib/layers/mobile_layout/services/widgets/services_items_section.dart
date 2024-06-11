@@ -28,6 +28,6 @@ class ServicesItemsSection extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return CustomScrollRow(financialItems: services);
+    return CustomScrollRow(financialItems: services,withoutDollar: true,);
   }
 }

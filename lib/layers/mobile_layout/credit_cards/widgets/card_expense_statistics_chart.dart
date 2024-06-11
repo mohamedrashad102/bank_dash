@@ -13,7 +13,8 @@ class CardExpenseStatisticsChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+      alignment: Alignment.center,
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           gradient: const LinearGradient(
@@ -25,6 +26,7 @@ class CardExpenseStatisticsChart extends StatelessWidget {
             end: Alignment.topLeft,
           )),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset(Assets.imagesChartExpenses),
           const Gap(21),
