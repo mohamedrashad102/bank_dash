@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
 
 class CustomSearchBar extends StatelessWidget {
@@ -8,26 +9,21 @@ class CustomSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
       decoration: BoxDecoration(
         color: const Color(0xFFF5F7FA),
         borderRadius: BorderRadius.circular(40),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      child: Row(
-        children: [
-          const Icon(Icons.search, color: Color(0xff718EBF)),
-          const SizedBox(width: 8),
-          Expanded(
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Search for something',
-                hintStyle: AppStyles.regular.fontSize13(context),
-                border: InputBorder.none,
-              ),
-            ),
-          ),
-        ],
+      alignment: Alignment.center,
+      child: TextField(
+        decoration: InputDecoration(
+          hintText: 'Search for something',
+          contentPadding: const EdgeInsets.only(top: -2),
+          hintStyle: AppStyles.regular.fontSize15(context),
+          border: InputBorder.none,
+          prefixIcon: const Icon(Icons.search, color: AppColors.primary1),
+          constraints: const BoxConstraints(maxHeight: 30),
+        ),
       ),
     );
   }
