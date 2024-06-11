@@ -24,45 +24,53 @@ class _TotalInvestmentChartState extends State<TotalInvestmentChart> {
 
   @override
   Widget build(BuildContext context) {
-    return SfCartesianChart(
-      primaryXAxis: CategoryAxis(
-        labelStyle: AppStyles.regular.fontSize12(context),
-      ),
-      primaryYAxis: NumericAxis(
-        labelStyle: AppStyles.regular.fontSize12(context),
-        minimum: 0,
-        maximum: 40000,
-        interval: 10000,
-        numberFormat: NumberFormat.currency(
-          locale: 'en_US',
-          symbol: '\$',
-          decimalDigits: 0,
+    return SingleChildScrollView(
+      clipBehavior: Clip.none,
+      scrollDirection: Axis.horizontal,
+      child: SizedBox(
+        width: 400,
+        height: 225,
+        child: SfCartesianChart(
+          primaryXAxis: CategoryAxis(
+            labelStyle: AppStyles.regular.fontSize12(context),
+          ),
+          primaryYAxis: NumericAxis(
+            labelStyle: AppStyles.regular.fontSize12(context),
+            minimum: 0,
+            maximum: 40000,
+            interval: 10000,
+            numberFormat: NumberFormat.currency(
+              locale: 'en_US',
+              symbol: '\$',
+              decimalDigits: 0,
+            ),
+          ),
+          tooltipBehavior: _tooltipBehavior,
+          series: <LineSeries<InvestmentData, String>>[
+            LineSeries<InvestmentData, String>(
+              width: 3,
+              color: const Color(0xffFCAA0B),
+              dataSource: <InvestmentData>[
+                InvestmentData('2016', 5000),
+                InvestmentData('2017', 20000),
+                InvestmentData('2018', 15000),
+                InvestmentData('2019', 30000),
+                InvestmentData('2020', 20000),
+                InvestmentData('2021', 28000),
+              ],
+              xValueMapper: (InvestmentData data, _) => data.year,
+              yValueMapper: (InvestmentData data, _) => data.investmentAmount,
+              markerSettings: const MarkerSettings(
+                isVisible: true,
+                shape: DataMarkerType.circle,
+                borderWidth: 2,
+                height: 10,
+                borderColor: Color(0xffFCAA0B),
+              ),
+            )
+          ],
         ),
       ),
-      tooltipBehavior: _tooltipBehavior,
-      series: <LineSeries<InvestmentData, String>>[
-        LineSeries<InvestmentData, String>(
-          width: 3,
-          color: const Color(0xffFCAA0B),
-          dataSource: <InvestmentData>[
-            InvestmentData('2016', 5000),
-            InvestmentData('2017', 20000),
-            InvestmentData('2018', 15000),
-            InvestmentData('2019', 30000),
-            InvestmentData('2020', 20000),
-            InvestmentData('2021', 28000),
-          ],
-          xValueMapper: (InvestmentData data, _) => data.year,
-          yValueMapper: (InvestmentData data, _) => data.investmentAmount,
-          markerSettings: const MarkerSettings(
-            isVisible: true,
-            shape: DataMarkerType.circle,
-            borderWidth: 2,
-            height: 10,
-            borderColor: Color(0xffFCAA0B),
-          ),
-        )
-      ],
     );
   }
 }

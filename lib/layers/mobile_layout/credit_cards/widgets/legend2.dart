@@ -10,7 +10,7 @@ class Legend2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ChartItem(
