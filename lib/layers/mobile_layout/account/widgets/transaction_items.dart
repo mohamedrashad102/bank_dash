@@ -8,22 +8,27 @@ class TransactionItems extends StatelessWidget {
   const TransactionItems({
     super.key,
   });
+<<<<<<< HEAD
   static List<CommonItemModel> transactionItems = const [
     CommonItemModel(
+=======
+  static List<CommonItemModel> transactionItems = [
+    const CommonItemModel(
+>>>>>>> 86a6f1b (edit drawer for desktop and mobile)
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
       bgColor: AppColors.bgColorMintGreen,
       subtitle: '25 Jan 2021',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Mobile Service',
       amount: '-340',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
       subtitle: '25 Jan 2021',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Emilly Wilson',
       amount: '+750',
       icon: Assets.imagesPinkPerson,

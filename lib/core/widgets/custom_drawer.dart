@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import 'package:bank_dash/core/widgets/custom_divider.dart';
+=======
+import 'package:bank_dash/core/widgets/custom_divder.dart';
+>>>>>>> 86a6f1b (edit drawer for desktop and mobile)
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -21,10 +25,14 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Drawer(
+      shape: RoundedRectangleBorder(),
+      backgroundColor: Colors.white,
+      elevation: 0,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Gap(26),
             SafeArea(
               bottom: false,
               child: DashLogo(),
