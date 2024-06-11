@@ -16,12 +16,13 @@ class TotalInvestmentSection extends StatelessWidget {
         const TitleText(title: 'Yearly Total Investment'),
         const Gap(12),
         Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            padding: const EdgeInsets.all(20),
-            child: const TotalInvestmentChart()),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          padding: const EdgeInsets.all(20),
+          child: const TotalInvestmentChart(),
+        ),
       ],
     );
   }

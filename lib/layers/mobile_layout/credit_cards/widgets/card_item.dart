@@ -1,7 +1,8 @@
-import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:bank_dash/core/widgets/custom_icon.dart';
+import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import 'custom_text_column.dart';
 
@@ -22,20 +23,22 @@ class CardItem extends StatelessWidget {
         color: Colors.white,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CustomIcon(
             icon: cardModel.icon,
             bgColor: cardModel.bgColor,
           ),
+          const Gap(12),
           CustomTextColumn(
             label: 'Card Type',
             data: cardModel.subTitle!,
           ),
+          const Gap(28),
           CustomTextColumn(
             label: cardModel.bank == null ? '' : 'Bank',
             data: cardModel.bank ?? '',
           ),
+          const Spacer(),
           Text(
             'view details',
             style: AppStyles.bold

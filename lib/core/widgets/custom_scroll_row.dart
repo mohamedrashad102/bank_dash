@@ -6,10 +6,11 @@ class CustomScrollRow extends StatelessWidget {
   const CustomScrollRow({
     super.key,
     required this.financialItems,
+    this.withoutDollar = false,
   });
 
   final List<FinancialItemModel> financialItems;
-
+  final bool withoutDollar;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -25,6 +26,7 @@ class CustomScrollRow extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 15.0),
                 child: FinancialItem(
                   financialItemModel: financialItems[index],
+                  withoutDollar: withoutDollar,
                 ),
               ),
             );
