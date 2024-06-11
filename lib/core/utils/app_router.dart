@@ -1,6 +1,8 @@
 import 'package:bank_dash/layers/mobile_layout/home/views/home_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
+import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
 import 'package:bank_dash/layers/mobile_layout/transactions/views/transactions_view.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../layers/mobile_layout/account/views/account_view.dart';
@@ -58,7 +60,10 @@ class AppRouter {
       ),
       GoRoute(
         path: settings,
-        builder: (context, state) => const SettingsView(),
+        builder: (context, state) => BlocProvider(
+          create: (context) => TabBarCubit(),
+          child: const SettingsView(),
+        ),
       ),
       GoRoute(
         path: transactions,

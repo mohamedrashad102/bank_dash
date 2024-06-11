@@ -21,7 +21,7 @@ class MediumStyle {
   TextStyle fontSize13(BuildContext context) {
     return _base(
       color: const Color(0xFF232323),
-      fontSize: getFontSize(context, 12),
+      fontSize: getFontSize(context, 13),
     );
   }
 
