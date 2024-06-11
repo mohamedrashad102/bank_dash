@@ -13,7 +13,7 @@ class InvestmentsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScaffold(
+    return const MobileCustomScaffold(
       title: 'Investments',
       body: SingleChildScrollView(
         child: Padding(

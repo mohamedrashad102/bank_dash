@@ -10,7 +10,7 @@ class TransactionsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScaffold(
+    return MobileCustomScaffold(
       title: 'Transactions',
       body: const Column(
         children: [

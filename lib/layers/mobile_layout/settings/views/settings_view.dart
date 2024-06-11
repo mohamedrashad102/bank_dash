@@ -11,7 +11,7 @@ class SettingsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScaffold(
+    return MobileCustomScaffold(
       title: 'Settings',
       body: Container(
         padding: const EdgeInsets.all(20),

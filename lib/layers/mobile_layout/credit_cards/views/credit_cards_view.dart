@@ -8,7 +8,7 @@ class CreditCardsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScaffold(
+    return const MobileCustomScaffold(
       title: 'Credit Cards',
       body: CreditCardsViewBody(),
     );
