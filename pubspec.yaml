@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.18.1
   syncfusion_flutter_charts: ^25.2.6
   syncfusion_localizations: ^25.2.6
+  zoom_widget: ^2.0.1
 
 dev_dependencies:
   flutter_lints: ^3.0.0

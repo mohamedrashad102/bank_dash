@@ -1,7 +1,7 @@
 import 'package:bank_dash/core/models/text_field_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/models/custom_text_field.dart';
+import '../../../../core/widgets/custom_text_field.dart';
 
 class TextFieldsList extends StatelessWidget {
   const TextFieldsList({
