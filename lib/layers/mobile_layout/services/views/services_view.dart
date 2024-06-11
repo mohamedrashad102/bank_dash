@@ -10,7 +10,7 @@ class ServicesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScaffold(
+    return const MobileCustomScaffold(
       title: 'Services',
       body: SingleChildScrollView(
         child: Padding(

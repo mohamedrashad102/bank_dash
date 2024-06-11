@@ -8,7 +8,7 @@ class LoansView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScaffold(
+    return const MobileCustomScaffold(
       title: 'Loans',
       body: LoansViewBody(),
     );
