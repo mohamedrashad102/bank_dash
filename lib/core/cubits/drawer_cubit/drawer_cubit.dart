@@ -23,6 +23,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
   int selectedIndex = 0;
   String title = 'Overview';
 
+  String title = 'OverView';
   final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
       title: 'Overview',
@@ -87,12 +88,20 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Accounts',
       icon: Assets.imagesAccountIcon,
+<<<<<<< HEAD
       view: DesktopAccountView(),
+=======
+      view: AccountsView(),
+>>>>>>> 86a6f1b (edit drawer for desktop and mobile)
     ),
     DrawerModel(
       title: 'Investments',
       icon: Assets.imagesInvestmentsIcon,
+<<<<<<< HEAD
       view: DesktopInvestmentView(),
+=======
+      view: InvestmentsView(),
+>>>>>>> 86a6f1b (edit drawer for desktop and mobile)
     ),
     DrawerModel(
       title: 'Credit Cards',
@@ -126,4 +135,6 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
   Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
   Widget currentView() => mobileDrawerItems[selectedIndex].view;
+  Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
+  Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
 }
