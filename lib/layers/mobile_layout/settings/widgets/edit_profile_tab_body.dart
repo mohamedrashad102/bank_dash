@@ -54,24 +54,22 @@ class EditProfileTabBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const ProfileImage(),
-            const Gap(20),
-            ...textFieldModels.map((model) => Padding(
-                  padding: const EdgeInsets.only(bottom: 15),
-                  child: CustomTextField(model: model),
-                )),
-            CustomTextButtonBuilder.normalWithText(
-              context,
-              text: 'Save',
-              onTap: () {},
-            ),
-            const Gap(15),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const ProfileImage(),
+          const Gap(20),
+          ...textFieldModels.map((model) => Padding(
+                padding: const EdgeInsets.only(bottom: 15),
+                child: CustomTextField(model: model),
+              )),
+          CustomTextButtonBuilder.normalWithText(
+            context,
+            text: 'Save',
+            onTap: () {},
+          ),
+          const Gap(15),
+        ],
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
@@ -15,7 +16,7 @@ class SettingsView extends StatelessWidget {
       title: 'Settings',
       body: Container(
         padding: const EdgeInsets.all(20),
-        margin: const EdgeInsets.all(25),
+        margin: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
@@ -24,8 +25,8 @@ class SettingsView extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             CustomTabBar(),
-            Gap(25),
-            TabsBody(),
+            Gap(20),
+            Expanded(child: TabsBody()),
           ],
         ),
       ),

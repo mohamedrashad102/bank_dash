@@ -22,26 +22,28 @@ class SecurityTabBody extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const TitleText(title: 'Two-factor Authentication'),
-        const Gap(15),
-        const CustomSwitch(body: 'Enable or disable two factor authentication'),
-        const Gap(15),
-        const TitleText(title: 'Change Password'),
-        const Gap(10),
-        ...textFieldModels.map((model) => Padding(
-              padding: const EdgeInsets.only(bottom: 15),
-              child: CustomTextField(model: model),
-            )),
-        CustomTextButtonBuilder.normalWithText(
-          context,
-          text: 'Save',
-          onTap: () {},
-        ),
-        const Gap(15),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const TitleText(title: 'Two-factor Authentication'),
+          const Gap(15),
+          const CustomSwitch(body: 'Enable or disable two factor authentication'),
+          const Gap(15),
+          const TitleText(title: 'Change Password'),
+          const Gap(10),
+          ...textFieldModels.map((model) => Padding(
+                padding: const EdgeInsets.only(bottom: 15),
+                child: CustomTextField(model: model),
+              )),
+          CustomTextButtonBuilder.normalWithText(
+            context,
+            text: 'Save',
+            onTap: () {},
+          ),
+          const Gap(15),
+        ],
+      ),
     );
   }
 }

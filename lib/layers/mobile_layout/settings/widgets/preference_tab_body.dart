@@ -23,28 +23,30 @@ class PreferenceTabBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ...textFieldModels.map((model) => Padding(
-              padding: const EdgeInsets.only(bottom: 15),
-              child: CustomTextField(model: model),
-            )),
-        const TitleText(title: 'Notification'),
-        const Gap(15),
-        const CustomSwitch(body: 'I send or receive digita currency'),
-        const Gap(15),
-        const CustomSwitch(body: 'I receive merchant order'),
-        const Gap(15),
-        const CustomSwitch(body: 'There are recommendation for my account'),
-        const Gap(15),
-        CustomTextButtonBuilder.normalWithText(
-          context,
-          text: 'Save',
-          onTap: () {},
-        ),
-        const Gap(15),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ...textFieldModels.map((model) => Padding(
+                padding: const EdgeInsets.only(bottom: 15),
+                child: CustomTextField(model: model),
+              )),
+          const TitleText(title: 'Notification'),
+          const Gap(15),
+          const CustomSwitch(body: 'I send or receive digita currency'),
+          const Gap(15),
+          const CustomSwitch(body: 'I receive merchant order'),
+          const Gap(15),
+          const CustomSwitch(body: 'There are recommendation for my account'),
+          const Gap(15),
+          CustomTextButtonBuilder.normalWithText(
+            context,
+            text: 'Save',
+            onTap: () {},
+          ),
+          const Gap(15),
+        ],
+      ),
     );
   }
 }
