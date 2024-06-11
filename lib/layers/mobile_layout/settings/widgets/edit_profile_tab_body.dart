@@ -1,3 +1,4 @@
+import 'package:bank_dash/core/widgets/custom_text_button_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -8,11 +9,16 @@ class EditProfileTabBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        ProfileImage(),
-        Gap(20),
-        
+        const ProfileImage(),
+        const Gap(20),
+        CustomTextButtonBuilder.normalWithText(
+          context,
+          text: 'Save',
+          onTap: () {},
+        ),
+        const Gap(15),
       ],
     );
   }
