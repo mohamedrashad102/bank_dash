@@ -6,16 +6,19 @@ import 'package:gap/gap.dart';
 class DebitSection extends StatelessWidget {
   const DebitSection({
     super.key,
+    this.width = 10,
   });
-
+  final double width;
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TitleText(title: 'Debit & Credit Overview'),
-        Gap(12),
-        DebitChart(),
+        const TitleText(title: 'Debit & Credit Overview'),
+        const Gap(12),
+        DebitChart(
+          width: width,
+        ),
       ],
     );
   }

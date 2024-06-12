@@ -20,7 +20,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
   DrawerCubit() : super(DrawerInitial());
 
   int selectedIndex = 0;
-  String title = 'OverView';
+  String title = 'Overview';
   final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
       title: 'Overview',
