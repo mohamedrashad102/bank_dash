@@ -17,6 +17,6 @@ class CommonItemModel {
     required this.date,
     this.status,
     this.category,
-    this.cardNumber,
+    this.cardNumber, required String investmentVal,
   });
 }
