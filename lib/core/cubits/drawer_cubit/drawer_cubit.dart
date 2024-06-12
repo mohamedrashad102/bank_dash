@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../layers/desktop_layout/account/views/desktop_account_view.dart';
+import '../../../layers/desktop_layout/investment/views/desktop_investment_view.dart';
 import '../../../layers/mobile_layout/account/views/account_view.dart';
 import '../../../layers/mobile_layout/credit_cards/views/credit_cards_view.dart';
 import '../../../layers/mobile_layout/investments/views/investments_view.dart';
@@ -90,7 +91,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Investments',
       icon: Assets.imagesInvestmentsIcon,
-      view: InvestmentsView(),
+      view: DesktopInvestmentView(),
     ),
     DrawerModel(
       title: 'Credit Cards',
