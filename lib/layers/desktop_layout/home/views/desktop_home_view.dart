@@ -3,9 +3,7 @@ import 'package:bank_dash/core/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/widgets/custom_desktop_body.dart';
-import '../../../../core/widgets/desktop_app_bar.dart';
-import '../../account/views/desktop_account_view.dart';
+import '../widgets/desktop_home_view_body.dart';
 
 class DesktopHomeView extends StatelessWidget {
   const DesktopHomeView({super.key});
@@ -19,22 +17,7 @@ class DesktopHomeView extends StatelessWidget {
           body: Row(
             children: [
               const CustomDrawer(platformNumber: 2),
-              Expanded(
-                child: CustomScrollView(
-                  slivers: [
-                    SliverToBoxAdapter(
-                      child: DesktopAppBar(
-                        title: cubit.title,
-                      ),
-                    ),
-                    const SliverToBoxAdapter(
-                      child: CustomDesktopBody(
-                        currentDesktopViewBody: DesktopAccountView(),
-                      ),
-                    ),
-                  ],
-                ),
-              )
+              DesktopHomeViewBody(cubit: cubit)
               //Expanded(child: DrawerCubit.get(context).currentDesktopView())
             ],
           ),

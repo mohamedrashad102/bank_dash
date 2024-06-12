@@ -1,5 +1,4 @@
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
-import 'package:bank_dash/layers/mobile_layout/loans/widgets/loans_overview_section.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

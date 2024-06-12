@@ -1,7 +1,7 @@
 import 'package:bank_dash/layers/mobile_layout/account/widgets/all_account_items.dart';
 import 'package:bank_dash/layers/mobile_layout/account/widgets/debit_section.dart';
 import 'package:bank_dash/layers/mobile_layout/account/widgets/inovice_section.dart';
-import 'package:bank_dash/layers/mobile_layout/account/widgets/mobile_last_transaction_section.dart';
+import 'package:bank_dash/layers/mobile_layout/account/widgets/last_transaction_section.dart';
 import 'package:bank_dash/layers/mobile_layout/account/widgets/my_cards_account_section.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
