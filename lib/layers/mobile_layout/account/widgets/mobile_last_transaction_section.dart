@@ -3,8 +3,8 @@ import 'package:bank_dash/layers/mobile_layout/account/widgets/transaction_items
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class LastTransactionSection extends StatelessWidget {
-  const LastTransactionSection({
+class MobileLastTransactionSection extends StatelessWidget {
+  const MobileLastTransactionSection({
     super.key,
   });
   @override
@@ -15,7 +15,6 @@ class LastTransactionSection extends StatelessWidget {
         TitleText(title: 'Last Transaction'),
         Gap(12),
         TransactionItems(),
-        
       ],
     );
   }

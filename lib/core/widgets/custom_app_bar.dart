@@ -1,9 +1,13 @@
-import 'package:bank_dash/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
+<<<<<<< HEAD
+=======
+import 'custom_search_bar.dart';
+import 'us_image.dart';
+>>>>>>> 0d0e1b3 (desktop account view done !)
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -38,11 +42,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   style: AppStyles.semiBold.fontSize20(context),
                 ),
               ),
-              const CircleAvatar(
-                backgroundImage: AssetImage(
-                  Assets.imagesUs,
-                ),
-              ),
+              const UsImage(),
             ],
           ),
           const Gap(20),

@@ -20,8 +20,14 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return const Drawer(
       shape: RoundedRectangleBorder(),
+=======
+    return Drawer(
+      width: 250,
+      shape: const RoundedRectangleBorder(),
+>>>>>>> 0d0e1b3 (desktop account view done !)
       backgroundColor: Colors.white,
       elevation: 0,
       child: SingleChildScrollView(

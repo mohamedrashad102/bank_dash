@@ -10,7 +10,7 @@ class AllAccountItems extends StatelessWidget {
   const AllAccountItems({
     super.key,
   });
-  static List<FinancialItemModel> items = [
+  static List<FinancialItemModel> accountItems = [
     FinancialItemModel(
       title: 'My Balance',
       value: '12,750',
@@ -52,13 +52,13 @@ class AllAccountItems extends StatelessWidget {
           children: [
             Expanded(
               child: FinancialItem(
-                financialItemModel: items[0],
+                financialItemModel: accountItems[0],
               ),
             ),
             const Gap(15),
             Expanded(
               child: FinancialItem(
-                financialItemModel: items[1],
+                financialItemModel: accountItems[1],
               ),
             )
           ],
@@ -68,13 +68,13 @@ class AllAccountItems extends StatelessWidget {
           children: [
             Expanded(
               child: FinancialItem(
-                financialItemModel: items[2],
+                financialItemModel: accountItems[2],
               ),
             ),
             const Gap(15),
             Expanded(
               child: FinancialItem(
-                financialItemModel: items[3],
+                financialItemModel: accountItems[3],
               ),
             )
           ],
