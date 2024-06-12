@@ -14,28 +14,28 @@ class InvoiceItems extends StatelessWidget {
       amount: '450',
       bgColor: AppColors.bgColorMintGreen,
       icon: Assets.imagesApple,
-      date: '5h ago',
+      subtitle: '5h ago',
     ),
     CommonItemModel(
       title: 'Abdo',
       amount: '450',
       bgColor: AppColors.bgColorYellow,
       icon: Assets.imagesUserYellow,
-      date: '10h ago',
+      subtitle: '10h ago',
     ),
     CommonItemModel(
       title: 'plastation',
       amount: '750',
       bgColor: AppColors.bgColorBlue,
       icon: Assets.imagesPlaystation,
-      date: '7 days ago',
+      subtitle: '7 days ago',
     ),
     CommonItemModel(
       title: 'Rashd',
       amount: '50',
       bgColor: AppColors.bgColorPink,
       icon: Assets.imagesPinkPerson,
-      date: '10 days ago',
+      subtitle: '10 days ago',
     ),
   ];
   @override

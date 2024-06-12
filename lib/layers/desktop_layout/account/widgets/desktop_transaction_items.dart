@@ -1,11 +1,11 @@
 import 'package:bank_dash/core/models/common_item_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
-import 'package:bank_dash/core/widgets/custom_common_item.dart';
+import 'package:bank_dash/layers/desktop_layout/account/widgets/desktop_last_transction_item.dart';
 import 'package:flutter/material.dart';
 
-class TransactionItems extends StatelessWidget {
-  const TransactionItems({
+class DesktopTransactionItems extends StatelessWidget {
+  const DesktopTransactionItems({
     super.key,
   });
   static List<CommonItemModel> transactionItems = [
@@ -13,12 +13,18 @@ class TransactionItems extends StatelessWidget {
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
+      status: 'pending',
+      category: 'Tansfer',
+      cardNumber: '1234 ****',
       bgColor: AppColors.bgColorMintGreen,
       subtitle: '25 Jan 2021',
     ),
     CommonItemModel(
       title: 'Mobile Service',
       amount: '-340',
+      status: 'completed',
+      category: 'Shopping',
+      cardNumber: '1234 ****',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
       subtitle: '25 Jan 2021',
@@ -26,6 +32,9 @@ class TransactionItems extends StatelessWidget {
     CommonItemModel(
       title: 'Emilly Wilson',
       amount: '+750',
+      status: 'completed',
+      cardNumber: '1234 ****',
+      category: 'Services',
       icon: Assets.imagesPinkPerson,
       bgColor: AppColors.bgColorPink,
       subtitle: '25 Jan 2021',
@@ -38,7 +47,7 @@ class TransactionItems extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(25),
       child: Column(
         children: transactionItems
             .asMap()
@@ -46,9 +55,9 @@ class TransactionItems extends StatelessWidget {
             .map(
               (e) => Padding(
                 padding: e.key == 1
-                    ? const EdgeInsets.symmetric(vertical: 12.0)
+                    ? const EdgeInsets.symmetric(vertical: 10.0)
                     : EdgeInsets.zero,
-                child: CustomCommonItem(
+                child: DesktopLastTransctionItem(
                   commonItemModel: e.value,
                   textColor: e.value.amount.contains('-')
                       ? AppColors.decrementColor

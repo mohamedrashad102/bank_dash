@@ -15,6 +15,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      width: 250,
       shape: const RoundedRectangleBorder(),
       backgroundColor: Colors.white,
       elevation: 0,
