@@ -1,13 +1,15 @@
-import 'package:bank_dash/core/widgets/custom_divder.dart';
+import 'package:bank_dash/core/widgets/custom_divider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 import '../cubits/drawer_cubit/drawer_cubit.dart';
 import '../models/drawer_model.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
 import 'dash_logo.dart';
-import 'drawer_list_view.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
@@ -18,42 +20,29 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return const Drawer(
       width: 250,
       shape: RoundedRectangleBorder(),
-
-    return Drawer(
-      width: 250,
-      shape: const RoundedRectangleBorder(),
-
       backgroundColor: Colors.white,
       elevation: 0,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
+            Gap(26),
             Gap(26),
             SafeArea(
-
-            const Gap(26),
-            const SafeArea(
-
               bottom: false,
               child: DashLogo(),
             ),
-            const CustomDivider(),
-            DrawerListView(
-              platformNumber: platformNumber,
-            ),
+            CustomDivider(),
+            DrawerListView(),
           ],
         ),
       ),
     );
   }
 }
-
 
 class DrawerListView extends StatelessWidget {
   const DrawerListView({super.key});
@@ -130,4 +119,3 @@ class DrawerListViewItem extends StatelessWidget {
     );
   }
 }
-

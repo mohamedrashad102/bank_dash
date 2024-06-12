@@ -3,9 +3,6 @@ import 'package:gap/gap.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
-
-import 'custom_search_bar.dart';
-
 import 'us_image.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
