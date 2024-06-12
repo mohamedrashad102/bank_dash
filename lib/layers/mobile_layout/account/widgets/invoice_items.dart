@@ -9,7 +9,7 @@ class InvoiceItems extends StatelessWidget {
     super.key,
   });
   static List<CommonItemModel> invoices = [
-    const CommonItemModel(
+     CommonItemModel(
       title: 'Apple Store',
       amount: '450',
       bgColor: AppColors.bgColorMintGreen,

@@ -3,11 +3,7 @@ import 'package:gap/gap.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
-<<<<<<< HEAD
-=======
-import 'custom_search_bar.dart';
 import 'us_image.dart';
->>>>>>> 0d0e1b3 (desktop account view done !)
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({

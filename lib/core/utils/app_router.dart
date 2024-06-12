@@ -1,5 +1,4 @@
 import 'package:bank_dash/layers/desktop_layout/home/views/desktop_home_view.dart';
-import 'package:bank_dash/layers/mobile_layout/home/views/mobile_home_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
 import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
 import 'package:bank_dash/layers/mobile_layout/transactions/views/transactions_view.dart';
@@ -10,7 +9,6 @@ import '../../layers/mobile_layout/account/views/account_view.dart';
 import '../../layers/mobile_layout/credit_cards/views/credit_cards_view.dart';
 import '../../layers/mobile_layout/investments/views/investments_view.dart';
 import '../../layers/mobile_layout/loans/views/loans_view.dart';
-import '../../layers/mobile_layout/my_privileges/views/my_privileges_view.dart';
 import '../../layers/mobile_layout/services/views/services_view.dart';
 import '../../layers/mobile_layout/settings/views/settings_view.dart';
 
@@ -46,10 +44,6 @@ class AppRouter {
       GoRoute(
         path: loans,
         builder: (context, state) => const LoansView(),
-      ),
-      GoRoute(
-        path: myPrivileges,
-        builder: (context, state) => const MyPrivilegesView(),
       ),
       GoRoute(
         path: overview,
