@@ -50,9 +50,6 @@ class TransactionItems extends StatelessWidget {
                     : EdgeInsets.zero,
                 child: CustomCommonItem(
                   commonItemModel: e.value,
-                  textColor: e.value.amount.contains('-')
-                      ? AppColors.decrementColor
-                      : AppColors.incrementColor,
                 ),
               ),
             )

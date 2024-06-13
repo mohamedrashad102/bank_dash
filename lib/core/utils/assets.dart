@@ -93,6 +93,10 @@ class Assets {
   /// assets/images/dark_master_card.svg
   static const String imagesDarkMasterCard = "assets/images/dark_master_card.svg";
 
+  /// Assets for imagesDeposit
+  /// assets/images/deposit.svg
+  static const String imagesDeposit = "assets/images/deposit.svg";
+
   /// Assets for imagesDollar
   /// assets/images/dollar.svg
   static const String imagesDollar = "assets/images/dollar.svg";
@@ -140,6 +144,10 @@ class Assets {
   /// Assets for imagesInvestmentsIcon
   /// assets/images/investments_icon.svg
   static const String imagesInvestmentsIcon = "assets/images/investments_icon.svg";
+
+  /// Assets for imagesJemiWilson
+  /// assets/images/jemi_wilson.svg
+  static const String imagesJemiWilson = "assets/images/jemi_wilson.svg";
 
   /// Assets for imagesLifeInsurance
   /// assets/images/life-insurance.svg

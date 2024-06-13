@@ -21,7 +21,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
 
   int selectedIndex = 0;
 
-  final List<DrawerModel> drawerItems = const [
+  final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
       title: 'Dashboard',
       icon: Assets.imagesHomeIcon,
@@ -85,5 +85,5 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     emit(DrawerChanged());
   }
 
-  Widget currentView() => drawerItems[selectedIndex].view;
+  Widget currentView() => mobileDrawerItems[selectedIndex].view;
 }

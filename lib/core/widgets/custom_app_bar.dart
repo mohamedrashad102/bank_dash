@@ -2,10 +2,8 @@ import 'package:bank_dash/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../helpers/size_config.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
-import 'custom_search_bar.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -48,12 +46,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ],
           ),
           const Gap(20),
-          const CustomSearchBar(),
+          // const CustomSearchBar(),
         ],
       ),
     );
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(SizeConfig.appBarHight);
+  Size get preferredSize => AppBar().preferredSize;
 }

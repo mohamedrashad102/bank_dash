@@ -6,7 +6,7 @@ class CommonItemModel {
   final String icon;
   final Color bgColor;
   final String date;
-  CommonItemModel({
+  const CommonItemModel({
     required this.title,
     required this.amount,
     required this.icon,

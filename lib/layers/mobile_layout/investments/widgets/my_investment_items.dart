@@ -50,9 +50,6 @@ class MyInvestmentItems extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 child: CustomCommonItem(
                   commonItemModel: e.value,
-                  textColor: e.value.amount.contains('-')
-                      ? AppColors.decrementColor
-                      : AppColors.incrementColor,
                 ),
               ),
             ),
