@@ -1,7 +1,6 @@
 import 'package:bank_dash/core/models/common_item_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
-import 'package:bank_dash/layers/desktop_layout/investment/views/desktop_investment_view.dart';
 import 'package:flutter/material.dart';
 
 import 'desktop_investment_item.dart';
@@ -11,7 +10,7 @@ class DesktopMyInvestmentItems extends StatelessWidget {
     super.key,
   });
   static List<CommonItemModel> investItems = [
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Apple Store',
       amount: '+16%',
       investmentVal: '100,000',
@@ -19,7 +18,7 @@ class DesktopMyInvestmentItems extends StatelessWidget {
       bgColor: AppColors.bgColorPink,
       date: 'E-commerce, Marketplace',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Google Store',
       amount: '-4%',
       investmentVal: '54,000',
@@ -27,7 +26,7 @@ class DesktopMyInvestmentItems extends StatelessWidget {
       bgColor: AppColors.bgColorBlue,
       date: 'E-commerce, Marketplace',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Tesla Motors',
       amount: '+25%',
       investmentVal: '25,300',

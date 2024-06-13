@@ -9,7 +9,10 @@ class CommonItemModel {
   final String? status;
   final String? category;
   final String? cardNumber;
-  const CommonItemModel({
+  final String? investmentVal;
+
+  const CommonItemModel(
+    this.investmentVal, {
     required this.title,
     required this.amount,
     required this.icon,
@@ -17,6 +20,6 @@ class CommonItemModel {
     required this.date,
     this.status,
     this.category,
-    this.cardNumber, required String investmentVal,
+    this.cardNumber,
   });
 }

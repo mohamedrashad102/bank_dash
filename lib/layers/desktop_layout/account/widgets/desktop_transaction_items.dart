@@ -8,7 +8,7 @@ class DesktopTransactionItems extends StatelessWidget {
   const DesktopTransactionItems({
     super.key,
   });
-  static List<CommonItemModel> transactionItems = [
+  static List<CommonItemModel> transactionItems = const [
     CommonItemModel(
       title: 'Spotify Subscription',
       amount: '-150',
