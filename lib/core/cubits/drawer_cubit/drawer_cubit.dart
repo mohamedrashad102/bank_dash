@@ -22,6 +22,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
 
   int selectedIndex = 0;
   String title = 'Overview';
+
   final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
       title: 'Overview',
@@ -124,4 +125,5 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
 
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
   Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
+  Widget currentView() => mobileDrawerItems[selectedIndex].view;
 }

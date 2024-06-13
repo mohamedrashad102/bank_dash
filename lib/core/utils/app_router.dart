@@ -1,5 +1,4 @@
 import 'package:bank_dash/layers/desktop_layout/home/views/desktop_home_view.dart';
-import 'package:bank_dash/layers/mobile_layout/home/views/mobile_home_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
 import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
 import 'package:bank_dash/layers/mobile_layout/transactions/views/transactions_view.dart';

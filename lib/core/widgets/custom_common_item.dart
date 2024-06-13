@@ -5,14 +5,14 @@ import 'package:bank_dash/layers/mobile_layout/account/widgets/title_date_column
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../utils/app_colors.dart';
+
 class CustomCommonItem extends StatelessWidget {
   const CustomCommonItem({
     super.key,
     required this.commonItemModel,
-    this.textColor,
   });
   final CommonItemModel commonItemModel;
-  final Color? textColor;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -28,8 +28,10 @@ class CustomCommonItem extends StatelessWidget {
           commonItemModel.amount.contains('%')
               ? commonItemModel.amount
               : '\$${commonItemModel.amount}',
-          style:
-              AppStyles.medium.fontSize12(context).copyWith(color: textColor),
+          style: AppStyles.medium.fontSize12(context).copyWith(
+              color: commonItemModel.amount.contains('-')
+                  ? AppColors.decrementColor
+                  : AppColors.incrementColor),
         ),
       ],
     );

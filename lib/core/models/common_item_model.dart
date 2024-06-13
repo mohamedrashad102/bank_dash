@@ -10,7 +10,7 @@ class CommonItemModel {
   final String? category;
   final String? cardNumber;
   final String? investmentVal;
-  CommonItemModel({
+  const CommonItemModel({
     required this.title,
     required this.amount,
     required this.icon,
