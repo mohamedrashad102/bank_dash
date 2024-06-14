@@ -14,21 +14,21 @@ class MyInvestmentItems extends StatelessWidget {
       amount: '+16%',
       icon: Assets.imagesApplePink,
       bgColor: AppColors.bgColorPink,
-      date: 'E-commerce, Marketplace',
+      subtitle: 'E-commerce, Marketplace',
     ),
     const CommonItemModel(
       title: 'Google Store',
       amount: '-4%',
       icon: Assets.imagesGoogle,
       bgColor: AppColors.bgColorBlue,
-      date: 'E-commerce, Marketplace',
+      subtitle: 'E-commerce, Marketplace',
     ),
     const CommonItemModel(
       title: 'Tesla Motors',
       amount: '+25%',
       icon: Assets.imagesTesla,
       bgColor: AppColors.bgColorYellow,
-      date: 'Electric vechicles',
+      subtitle: 'Electric vechicles',
     ),
   ];
   @override

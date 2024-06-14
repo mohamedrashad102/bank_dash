@@ -28,7 +28,7 @@ class TitleDateColumn extends StatelessWidget {
         const Gap(4),
         FittedBox(
           child: Text(
-            transactionItemModel.date,
+            transactionItemModel.subtitle,
             style: AppStyles.regular.fontSize12(context),
           ),
         ),

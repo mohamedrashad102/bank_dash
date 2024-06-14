@@ -9,29 +9,49 @@ class TransactionItems extends StatelessWidget {
     super.key,
   });
   static List<CommonItemModel> transactionItems = [
+
     const CommonItemModel(
+
+    CommonItemModel(
+
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
       bgColor: AppColors.bgColorMintGreen,
+
       date: '25 Jan 2021',
       investmentVal: '',
     ),
     const CommonItemModel(
+
+      subtitle: '25 Jan 2021',
+    ),
+    CommonItemModel(
+
       title: 'Mobile Service',
       amount: '-340',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
+
       date: '25 Jan 2021',
       investmentVal: '',
     ),
     const CommonItemModel(
+
+      subtitle: '25 Jan 2021',
+    ),
+    CommonItemModel(
+
       title: 'Emilly Wilson',
       amount: '+750',
       icon: Assets.imagesPinkPerson,
       bgColor: AppColors.bgColorPink,
+
       date: '25 Jan 2021',
       investmentVal: '',
+
+      subtitle: '25 Jan 2021',
+
     ),
   ];
   @override
@@ -53,6 +73,11 @@ class TransactionItems extends StatelessWidget {
                     : EdgeInsets.zero,
                 child: CustomCommonItem(
                   commonItemModel: e.value,
+
+                  textColor: e.value.amount.contains('-')
+                      ? AppColors.decrementColor
+                      : AppColors.incrementColor,
+
                 ),
               ),
             )

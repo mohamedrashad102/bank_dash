@@ -14,21 +14,21 @@ class TransactionItems extends StatelessWidget {
       amount: '-150',
       icon: Assets.imagesSpotify,
       bgColor: AppColors.bgColorMintGreen,
-      date: '25 Jan 2021',
+      subtitle: '25 Jan 2021',
     ),
     const CommonItemModel(
       title: 'Mobile Service',
       amount: '-340',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
-      date: '25 Jan 2021',
+      subtitle: '25 Jan 2021',
     ),
     const CommonItemModel(
       title: 'Emilly Wilson',
       amount: '+750',
       icon: Assets.imagesPinkPerson,
       bgColor: AppColors.bgColorPink,
-      date: '25 Jan 2021',
+      subtitle: '25 Jan 2021',
     ),
   ];
   @override
