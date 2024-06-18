@@ -16,7 +16,7 @@ void main() {
     SystemUiMode.immersiveSticky,
   );
   runApp(DevicePreview(
-    enabled: !kReleaseMode,
+    enabled: !kReleaseMode && true,
     builder: (context) => const MyApp(),
   ));
 }

@@ -31,9 +31,6 @@ class CustomDrawer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Gap(26),
-            DrawerHeader(
-              child: DashLogo(),
-            ),
             SafeArea(
               bottom: false,
               child: DashLogo(),
