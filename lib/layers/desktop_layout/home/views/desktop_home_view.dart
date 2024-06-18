@@ -1,11 +1,4 @@
 import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
-<<<<<<< HEAD
-import 'package:bank_dash/core/widgets/custom_drawer.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../widgets/desktop_home_view_body.dart';
-=======
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:bank_dash/core/utils/assets.dart';
@@ -15,7 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
->>>>>>> 86a6f1b (edit drawer for desktop and mobile)
+
+import '../widgets/desktop_home_view_body.dart';
 
 class DesktopHomeView extends StatelessWidget {
   const DesktopHomeView({super.key});
@@ -25,17 +19,12 @@ class DesktopHomeView extends StatelessWidget {
     return BlocBuilder<DrawerCubit, DrawerCubitState>(
       builder: (context, state) {
         final cubit = DrawerCubit.get(context);
-<<<<<<< HEAD
-=======
 
->>>>>>> 86a6f1b (edit drawer for desktop and mobile)
         return Scaffold(
           body: Row(
             children: [
               const CustomDrawer(platformNumber: 2),
-<<<<<<< HEAD
-              DesktopHomeViewBody(cubit: cubit)
-=======
+              DesktopHomeViewBody(cubit: cubit),
               Column(
                 children: [
                   CustomAppBar(
@@ -43,7 +32,6 @@ class DesktopHomeView extends StatelessWidget {
                   ),
                 ],
               )
->>>>>>> 86a6f1b (edit drawer for desktop and mobile)
               //Expanded(child: DrawerCubit.get(context).currentDesktopView())
             ],
           ),
@@ -52,8 +40,6 @@ class DesktopHomeView extends StatelessWidget {
     );
   }
 }
-<<<<<<< HEAD
-=======
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -93,4 +79,3 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
->>>>>>> 86a6f1b (edit drawer for desktop and mobile)

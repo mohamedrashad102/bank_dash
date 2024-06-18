@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import 'package:bank_dash/layers/desktop_layout/account/widgets/desktop_account_items.dart';
 import 'package:bank_dash/layers/desktop_layout/account/widgets/last_transaction_and_my_cards.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,6 @@ class DesktopAccountView extends StatelessWidget {
     );
   }
 }
-=======
 // import 'package:bank_dash/core/widgets/custom_scaffold.dart';
 // import 'package:flutter/material.dart';
 
@@ -36,4 +34,3 @@ class DesktopAccountView extends StatelessWidget {
 //     return const CustomScaffold();
 //   }
 // }
->>>>>>> 86a6f1b (edit drawer for desktop and mobile)

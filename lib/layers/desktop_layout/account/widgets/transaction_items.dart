@@ -8,13 +8,8 @@ class TransactionItems extends StatelessWidget {
   const TransactionItems({
     super.key,
   });
-<<<<<<< HEAD
-  static List<CommonItemModel> transactionItems = const [
-    CommonItemModel(
-=======
   static List<CommonItemModel> transactionItems = [
     const CommonItemModel(
->>>>>>> refs/rewritten/try-to-fixed-it
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,

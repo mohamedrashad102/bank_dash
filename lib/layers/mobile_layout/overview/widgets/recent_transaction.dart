@@ -10,35 +10,22 @@ import '../../../../core/utils/assets.dart';
 class RecentTransaction extends StatelessWidget {
   const RecentTransaction({super.key});
 
-<<<<<<< HEAD
-  static List<CommonItemModel> recentTransactions = const [
-    CommonItemModel(
-=======
   static List<CommonItemModel> recentTransactions = [
     const CommonItemModel(
->>>>>>> refs/rewritten/try-to-fixed-it
       bgColor: AppColors.bgColorYellow,
       icon: Assets.imagesBlockCard,
       amount: '-850',
       subtitle: '28 January 2021',
       title: 'Deposit from my',
     ),
-<<<<<<< HEAD
-    CommonItemModel(
-=======
     const CommonItemModel(
->>>>>>> refs/rewritten/try-to-fixed-it
       bgColor: AppColors.bgColorBlue,
       icon: Assets.imagesDeposit,
       amount: '+2500',
       subtitle: '25 January 2021',
       title: 'Deposit Paypal',
     ),
-<<<<<<< HEAD
-    CommonItemModel(
-=======
     const CommonItemModel(
->>>>>>> refs/rewritten/try-to-fixed-it
       bgColor: AppColors.bgColorMintGreen,
       icon: Assets.imagesJemiWilson,
       amount: '+1700',
