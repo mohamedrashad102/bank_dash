@@ -5,7 +5,6 @@ import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../layers/desktop_layout/account/views/desktop_account_view.dart';
 import '../../../layers/desktop_layout/credit_cards/views/desktop_credit_cards_view.dart';
 import '../../../layers/desktop_layout/investment/views/desktop_investment_view.dart';
 import '../../../layers/mobile_layout/account/views/account_view.dart';
@@ -23,6 +22,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
 
   int selectedIndex = 0;
   String title = 'Overview';
+
   final List<DrawerModel> mobileDrawerItems = const [
     DrawerModel(
       title: 'Overview',
@@ -87,16 +87,12 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Accounts',
       icon: Assets.imagesAccountIcon,
-      view: DesktopAccountView(),
+      view: AccountsView(),
     ),
     DrawerModel(
       title: 'Investments',
       icon: Assets.imagesInvestmentsIcon,
-
-      view: InvestmentsView(),
-
       view: DesktopInvestmentView(),
-
     ),
     DrawerModel(
       title: 'Credit Cards',
@@ -126,7 +122,6 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     title = desktopDrawerItems[selectedIndex].title;
     emit(DrawerChanged());
   }
-
 
   Widget currentView() => mobileDrawerItems[selectedIndex].view;
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;

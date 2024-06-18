@@ -1,9 +1,6 @@
 import 'package:bank_dash/core/models/common_item_model.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
 import 'package:bank_dash/core/widgets/custom_icon.dart';
-
-import 'package:bank_dash/layers/desktop_layout/investment/views/desktop_investment_view.dart';
-
 import 'package:bank_dash/layers/mobile_layout/account/widgets/title_date_column.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';

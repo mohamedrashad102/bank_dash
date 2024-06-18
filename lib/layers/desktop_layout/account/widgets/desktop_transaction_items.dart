@@ -10,9 +10,6 @@ class DesktopTransactionItems extends StatelessWidget {
   });
 
   static List<CommonItemModel> transactionItems = const [
-
-  static List<CommonItemModel> transactionItems = [
-
     CommonItemModel(
       title: 'Spotify Subscription',
       amount: '-150',
@@ -21,11 +18,7 @@ class DesktopTransactionItems extends StatelessWidget {
       category: 'Tansfer',
       cardNumber: '1234 ****',
       bgColor: AppColors.bgColorMintGreen,
-
-      date: '25 Jan 2021',
-
       subtitle: '25 Jan 2021',
-
     ),
     CommonItemModel(
       title: 'Mobile Service',
@@ -35,11 +28,7 @@ class DesktopTransactionItems extends StatelessWidget {
       cardNumber: '1234 ****',
       icon: Assets.imagesMobileService,
       bgColor: AppColors.bgColorBlue,
-
-      date: '25 Jan 2021',
-
       subtitle: '25 Jan 2021',
-
     ),
     CommonItemModel(
       title: 'Emilly Wilson',
@@ -49,11 +38,7 @@ class DesktopTransactionItems extends StatelessWidget {
       category: 'Services',
       icon: Assets.imagesPinkPerson,
       bgColor: AppColors.bgColorPink,
-
-      date: '25 Jan 2021',
-
       subtitle: '25 Jan 2021',
-
     ),
   ];
   @override

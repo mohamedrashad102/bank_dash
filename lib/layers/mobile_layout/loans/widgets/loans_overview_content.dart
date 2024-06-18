@@ -1,4 +1,4 @@
-import 'package:bank_dash/core/widgets/custom_divder.dart';
+import 'package:bank_dash/core/widgets/custom_divider.dart';
 import 'package:bank_dash/layers/mobile_layout/loans/widgets/loans_header.dart';
 import 'package:bank_dash/layers/mobile_layout/loans/widgets/loans_items_list.dart';
 import 'package:flutter/material.dart';

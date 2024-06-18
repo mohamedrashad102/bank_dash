@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../models/table_item_model.dart';
-import '../../../../core/widgets/custom_divder.dart';
+import '../../../../core/widgets/custom_divider.dart';
 import 'table_header.dart';
 import 'table_item.dart';
 
