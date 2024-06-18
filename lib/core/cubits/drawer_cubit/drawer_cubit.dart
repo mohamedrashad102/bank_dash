@@ -6,7 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../layers/desktop_layout/account/views/desktop_account_view.dart';
+<<<<<<< HEAD
+import '../../../layers/desktop_layout/credit_cards/views/desktop_credit_cards_view.dart';
 import '../../../layers/desktop_layout/investment/views/desktop_investment_view.dart';
+=======
+>>>>>>> 30d5f70 (desktop investment done !)
 import '../../../layers/mobile_layout/account/views/account_view.dart';
 import '../../../layers/mobile_layout/credit_cards/views/credit_cards_view.dart';
 import '../../../layers/mobile_layout/investments/views/investments_view.dart';
@@ -98,15 +102,19 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
       title: 'Investments',
       icon: Assets.imagesInvestmentsIcon,
 <<<<<<< HEAD
+<<<<<<< HEAD
       view: DesktopInvestmentView(),
 =======
       view: InvestmentsView(),
 >>>>>>> 86a6f1b (edit drawer for desktop and mobile)
+=======
+      view: InvestmentsView(),
+>>>>>>> refs/rewritten/try-to-fixed-it
     ),
     DrawerModel(
       title: 'Credit Cards',
       icon: Assets.imagesCreditCardsIcon,
-      view: CreditCardsView(),
+      view: DesktopCreditCardsView(),
     ),
     DrawerModel(
       title: 'Loans',
@@ -132,6 +140,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     emit(DrawerChanged());
   }
 
+  Widget currentView() => mobileDrawerItems[selectedIndex].view;
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
   Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
   Widget currentView() => mobileDrawerItems[selectedIndex].view;

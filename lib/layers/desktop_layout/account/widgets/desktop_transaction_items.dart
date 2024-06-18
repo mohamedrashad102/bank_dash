@@ -8,8 +8,14 @@ class DesktopTransactionItems extends StatelessWidget {
   const DesktopTransactionItems({
     super.key,
   });
+<<<<<<< HEAD
   static List<CommonItemModel> transactionItems = const [
     CommonItemModel(
+=======
+
+  static List<CommonItemModel> transactionItems = [
+    const CommonItemModel(
+>>>>>>> refs/rewritten/try-to-fixed-it
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
@@ -19,7 +25,7 @@ class DesktopTransactionItems extends StatelessWidget {
       bgColor: AppColors.bgColorMintGreen,
       subtitle: '25 Jan 2021',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Mobile Service',
       amount: '-340',
       status: 'completed',
@@ -29,7 +35,7 @@ class DesktopTransactionItems extends StatelessWidget {
       bgColor: AppColors.bgColorBlue,
       subtitle: '25 Jan 2021',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Emilly Wilson',
       amount: '+750',
       status: 'completed',

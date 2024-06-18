@@ -16,7 +16,10 @@ class InvestmentValueCol extends StatelessWidget {
       children: [
         FittedBox(
           child: Text(
-            '\$${investmentItemModel.investmentVal!}',
+            '\$${investmentItemModel.amount}',
+            // TODO: See if this is correct
+            // '\$${investmentItemModel.investmentVal!}',
+
             style: AppStyles.medium
                 .fontSize14(context)
                 .copyWith(color: const Color(0xff333B69)),

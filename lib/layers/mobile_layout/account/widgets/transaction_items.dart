@@ -9,12 +9,17 @@ class TransactionItems extends StatelessWidget {
     super.key,
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
   static List<CommonItemModel> transactionItems = const [
     CommonItemModel(
 =======
   static List<CommonItemModel> transactionItems = [
     const CommonItemModel(
 >>>>>>> 86a6f1b (edit drawer for desktop and mobile)
+=======
+  static List<CommonItemModel> transactionItems = [
+    const CommonItemModel(
+>>>>>>> refs/rewritten/try-to-fixed-it
       title: 'Spotify Subscription',
       amount: '-150',
       icon: Assets.imagesSpotify,
