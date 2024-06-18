@@ -20,6 +20,10 @@ class TextFieldsList extends StatelessWidget {
       title: 'Card Number',
       hintText: '**** **** **** ****',
     ),
+    TextFieldModel(
+      title: 'Expiration Date',
+      hintText: '1 July 2024',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
