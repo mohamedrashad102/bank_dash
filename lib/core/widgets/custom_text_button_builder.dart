@@ -33,14 +33,14 @@ class CustomTextButtonBuilder {
       {required String text,
       Function()? onTap,
       double? width,
-      double? hight,
+      double? height,
       double? borderRadius,
       final double? verticalPadding,
       final double? horizontalPadding}) {
     return CustomTextButton(
       onTap: onTap,
       width: width,
-      hight: hight,
+      hight: height,
       verticalPadding: verticalPadding,
       horizontalPadding: horizontalPadding,
       bgColor: Colors.white,

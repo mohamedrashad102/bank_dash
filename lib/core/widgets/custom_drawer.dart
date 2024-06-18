@@ -1,6 +1,8 @@
+import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/core/widgets/custom_divder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:lottie/lottie.dart';
 
 import 'dash_logo.dart';
 import 'drawer_list_view.dart';
