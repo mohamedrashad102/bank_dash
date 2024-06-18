@@ -92,7 +92,11 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Investments',
       icon: Assets.imagesInvestmentsIcon,
+
+      view: InvestmentsView(),
+
       view: DesktopInvestmentView(),
+
     ),
     DrawerModel(
       title: 'Credit Cards',
@@ -123,6 +127,8 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     emit(DrawerChanged());
   }
 
+
+  Widget currentView() => mobileDrawerItems[selectedIndex].view;
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
   Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
 }

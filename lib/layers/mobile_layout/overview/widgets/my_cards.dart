@@ -1,4 +1,5 @@
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
+import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -12,7 +13,7 @@ class MyCards extends StatelessWidget {
   static List<CreditCardModel> cards = [
     CreditCardModel(
       balance: '1281.3',
-      cardHolder: 'card Holder',
+      cardHolder: 'Mohamed Rashad',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
       gradientColors: const [
@@ -22,22 +23,22 @@ class MyCards extends StatelessWidget {
     ),
     CreditCardModel(
       balance: '1281.3',
-      cardHolder: 'card Holder',
+      cardHolder: 'Abooud',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
       gradientColors: const [
-        Color(0xFF4C49ED),
-        Color(0xFF0A06F4),
+        Color(0xFF2F2DA5),
+        Color(0xFF0000FF),
       ],
     ),
     CreditCardModel(
       balance: '1281.3',
-      cardHolder: 'card Holder',
+      cardHolder: 'Ahmed',
       validThru: '12/22',
       cardNumber: '3142 1293 4394 9243',
       gradientColors: const [
-        Color(0xFF4C49ED),
-        Color(0xFF0A06F4),
+        Color(0xFF2D60FF),
+        Color(0xFF539BFF),
       ],
     ),
   ];
@@ -59,22 +60,19 @@ class MyCards extends StatelessWidget {
           ],
         ),
         const Gap(12),
-        SizedBox(
-          height: 220,
-          child: PageView.builder(
-            itemBuilder: (context, index) => CreditCardWidget(
+        ExpandablePageView.builder(
+          controller: PageController(viewportFraction: .99),
+          clipBehavior: Clip.none,
+          itemBuilder: (context, index) => Padding(
+            padding: index == cards.length - 1
+                ? EdgeInsets.zero
+                : const EdgeInsets.only(right: 10.0),
+            child: CreditCardWidget(
               card: cards[index],
             ),
-            itemCount: cards.length,
           ),
+          itemCount: cards.length,
         ),
-        // SingleChildScrollView(
-        //   scrollDirection: Axis.horizontal,
-        //   child: Row(
-        //     children:
-        //         cards.map((card) => CreditCardWidget(card: card)).toList(),
-        //   ),
-        // ),
       ],
     );
   }

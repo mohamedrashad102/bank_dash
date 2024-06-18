@@ -9,21 +9,21 @@ class MyInvestmentItems extends StatelessWidget {
     super.key,
   });
   static List<CommonItemModel> investItems = [
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Apple Store',
       amount: '+16%',
       icon: Assets.imagesApplePink,
       bgColor: AppColors.bgColorPink,
       subtitle: 'E-commerce, Marketplace',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Google Store',
       amount: '-4%',
       icon: Assets.imagesGoogle,
       bgColor: AppColors.bgColorBlue,
       subtitle: 'E-commerce, Marketplace',
     ),
-    CommonItemModel(
+    const CommonItemModel(
       title: 'Tesla Motors',
       amount: '+25%',
       icon: Assets.imagesTesla,
@@ -50,9 +50,6 @@ class MyInvestmentItems extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 child: CustomCommonItem(
                   commonItemModel: e.value,
-                  textColor: e.value.amount.contains('-')
-                      ? AppColors.decrementColor
-                      : AppColors.incrementColor,
                 ),
               ),
             ),
