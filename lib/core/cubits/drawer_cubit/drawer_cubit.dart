@@ -2,6 +2,7 @@ import 'package:bank_dash/core/models/drawer_model.dart';
 import 'package:bank_dash/core/utils/app_router.dart';
 import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/layers/desktop_layout/loans/views/desktop_loans_view.dart';
+import 'package:bank_dash/layers/desktop_layout/services/views/desktop_services_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -78,12 +79,12 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Overview',
       icon: Assets.imagesHomeIcon,
-      view: OverviewView(),
+      view: DesktopCreditCardsView(), // put DesktopOverviewView() here
     ),
     DrawerModel(
       title: 'Transactions',
       icon: Assets.imagesTransactionsIcon,
-      view: TransactionsView(),
+      view: DesktopCreditCardsView(), // put DesktopTransactionsView() here
     ),
     DrawerModel(
       title: 'Accounts',
@@ -108,12 +109,12 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Services',
       icon: Assets.imagesService,
-      view: ServicesView(),
+      view: DesktopServicesView(),
     ),
     DrawerModel(
       title: 'Settings',
       icon: Assets.imagesSettings,
-      view: SettingsView(),
+      view: DesktopCreditCardsView(), // put DesktopSettingsView() here
     ),
   ];
   static DrawerCubit get(context) => BlocProvider.of(context);

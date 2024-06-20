@@ -5,10 +5,6 @@ class Assets {
   /// assets/images/account_icon.svg
   static const String imagesAccountIcon = "assets/images/account_icon.svg";
 
-  /// Assets for imagesAnimation
-  /// assets/images/Animation.json
-  static const String imagesAnimation = "assets/images/Animation.json";
-
   /// Assets for imagesApple
   /// assets/images/apple.svg
   static const String imagesApple = "assets/images/apple.svg";
@@ -220,6 +216,10 @@ class Assets {
   /// Assets for imagesService
   /// assets/images/service.svg
   static const String imagesService = "assets/images/service.svg";
+
+  /// Assets for imagesServicesChart
+  /// assets/images/services_chart.svg
+  static const String imagesServicesChart = "assets/images/services_chart.svg";
 
   /// Assets for imagesSetteingsWithColor
   /// assets/images/setteings_with_color.svg

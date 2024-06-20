@@ -1,7 +1,6 @@
 import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
 import 'package:bank_dash/core/widgets/custom_desktop_body.dart';
 import 'package:bank_dash/core/widgets/desktop_app_bar.dart';
-import 'package:bank_dash/layers/desktop_layout/loans/views/desktop_loans_view.dart';
 import 'package:flutter/material.dart';
 
 class DesktopHomeViewBody extends StatelessWidget {
@@ -22,9 +21,9 @@ class DesktopHomeViewBody extends StatelessWidget {
               title: cubit.title,
             ),
           ),
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: CustomDesktopBody(
-              currentDesktopViewBody: DesktopLoansView(),
+              currentDesktopViewBody: cubit.currentDesktopView(),
             ),
           ),
         ],

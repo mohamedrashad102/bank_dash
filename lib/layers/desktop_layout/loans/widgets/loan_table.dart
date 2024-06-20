@@ -17,7 +17,7 @@ class DesktopLoanTable extends StatelessWidget {
         gradient: const LinearGradient(
           colors: [
             Color(0xFF514a9d),
-            Color.fromARGB(255, 150, 134, 240),
+            Color(0xFF9686F0),
           ],
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
@@ -27,7 +27,6 @@ class DesktopLoanTable extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           DataTable(
-          
             columns: const [
               DataColumn(label: TableLabelText(label: 'SL')),
               DataColumn(label: TableLabelText(label: 'Money')),
@@ -108,9 +107,7 @@ class DesktopLoanTable extends StatelessWidget {
               color: Colors.white, // Assuming black color for text
             );
 
-    return DataRow(
-      
-      cells: [
+    return DataRow(cells: [
       DataCell(Text(
         slNo,
         style: cellTextStyle,
