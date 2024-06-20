@@ -8,7 +8,8 @@ class InvoiceItems extends StatelessWidget {
   const InvoiceItems({
     super.key,
   });
-  static List<CommonItemModel> invoices = [
+
+  static List<CommonItemModel> invoices = const [
     CommonItemModel(
       title: 'Apple Store',
       amount: '450',

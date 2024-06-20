@@ -8,7 +8,8 @@ class TransactionItems extends StatelessWidget {
   const TransactionItems({
     super.key,
   });
-  static List<CommonItemModel> transactionItems = [
+
+  static List<CommonItemModel> transactionItems = const [
     CommonItemModel(
       title: 'Spotify Subscription',
       amount: '-150',
@@ -50,9 +51,6 @@ class TransactionItems extends StatelessWidget {
                     : EdgeInsets.zero,
                 child: CustomCommonItem(
                   commonItemModel: e.value,
-                  textColor: e.value.amount.contains('-')
-                      ? AppColors.decrementColor
-                      : AppColors.incrementColor,
                 ),
               ),
             )

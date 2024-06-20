@@ -9,7 +9,7 @@ class MobileHomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<DrawerCubit, DrawerCubitState>(
       builder: (context, state) {
-        return DrawerCubit.get(context).currentDesktopView();
+        return DrawerCubit.get(context).currentMobileView();
       },
     );
   }
