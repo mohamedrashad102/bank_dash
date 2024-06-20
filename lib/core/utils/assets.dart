@@ -237,6 +237,10 @@ class Assets {
   /// assets/images/service.svg
   static const String imagesService = "assets/images/service.svg";
 
+  /// Assets for imagesServicesChart
+  /// assets/images/services_chart.svg
+  static const String imagesServicesChart = "assets/images/services_chart.svg";
+
   /// Assets for imagesSetteingsWithColor
   /// assets/images/setteings_with_color.svg
   static const String imagesSetteingsWithColor = "assets/images/setteings_with_color.svg";

@@ -38,12 +38,12 @@ class CardItem extends StatelessWidget {
             label: cardModel.bank == null ? '' : 'Bank',
             data: cardModel.bank ?? '',
           ),
-          const Gap(28),
+         // const Gap(28),
           CustomTextColumn(
             label: cardModel.cardNumber == null ? '' : 'Card Number',
             data: cardModel.cardNumber ?? '',
           ),
-          const Gap(28),
+          //const Gap(28),
           CustomTextColumn(
             label: cardModel.cardName == null ? '' : 'Namain Card',
             data: cardModel.cardName ?? '',

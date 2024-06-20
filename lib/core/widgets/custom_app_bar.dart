@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles/app_styles.dart';
@@ -17,32 +16,25 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       color: Colors.white,
       padding: const EdgeInsets.fromLTRB(20, 30, 20, 10),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
+      child: Row(
         children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                },
-                icon: const Icon(
-                  Icons.menu,
-                  color: AppColors.primary1,
-                ),
-              ),
-              Expanded(
-                child: Text(
-                  title,
-                  textAlign: TextAlign.center,
-                  style: AppStyles.semiBold.fontSize20(context),
-                ),
-              ),
-              const UsImage(),
-            ],
+          IconButton(
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            icon: const Icon(
+              Icons.menu,
+              color: AppColors.primary1,
+            ),
           ),
-          const Gap(20),
-          // const CustomSearchBar(),
+          Expanded(
+            child: Text(
+              title,
+              textAlign: TextAlign.center,
+              style: AppStyles.semiBold.fontSize20(context),
+            ),
+          ),
+          const UsImage(),
         ],
       ),
     );
