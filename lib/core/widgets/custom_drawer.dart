@@ -60,7 +60,7 @@ class DrawerListView extends StatelessWidget {
             isSelected: cubit.selectedIndex == index,
             onTap: () {
               DrawerCubit.get(context).changeDrawer(index);
-              context.pop();
+              //context.pop();
             },
           ),
           itemCount: items.length,
