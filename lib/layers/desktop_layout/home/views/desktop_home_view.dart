@@ -25,13 +25,6 @@ class DesktopHomeView extends StatelessWidget {
             children: [
               const CustomDrawer(platformNumber: 2),
               DesktopHomeViewBody(cubit: cubit),
-              Column(
-                children: [
-                  CustomAppBar(
-                    title: cubit.title,
-                  ),
-                ],
-              )
               //Expanded(child: DrawerCubit.get(context).currentDesktopView())
             ],
           ),
