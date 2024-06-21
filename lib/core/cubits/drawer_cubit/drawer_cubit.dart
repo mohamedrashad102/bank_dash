@@ -123,7 +123,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     emit(DrawerChanged());
   }
 
-  Widget currentView() => mobileDrawerItems[selectedIndex].view;
+  // Widget currentView() => mobileDrawerItems[selectedIndex].view;
   Widget currentDesktopView() => desktopDrawerItems[selectedIndex].view;
   Widget currentMobileView() => mobileDrawerItems[selectedIndex].view;
 }
