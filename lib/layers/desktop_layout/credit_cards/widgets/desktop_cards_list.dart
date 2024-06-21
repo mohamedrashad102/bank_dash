@@ -1,8 +1,9 @@
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
-import 'package:bank_dash/layers/mobile_layout/credit_cards/widgets/card_item.dart';
 import 'package:flutter/material.dart';
+
+import 'desktop_card_item.dart';
 
 class DesktopCardsList extends StatelessWidget {
   const DesktopCardsList({
@@ -50,7 +51,7 @@ class DesktopCardsList extends StatelessWidget {
           .map(
             (e) => Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
-              child: CardItem(cardModel: e),
+              child: DesktopCardItem(cardModel: e),
             ),
           )
           .toList(),
