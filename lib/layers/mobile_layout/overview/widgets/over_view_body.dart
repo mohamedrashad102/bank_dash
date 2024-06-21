@@ -11,20 +11,30 @@ class OverViewBody extends StatelessWidget {
     super.key,
   });
 
+  static List<Widget> sections = [
+    const MyCards(),
+    const RecentTransaction(),
+    const WeeklyActivity(),
+    const ExpenseStatistics(),
+    const QuickTransfer(),
+    const BalanceHistory(),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25),
         child: Column(
-          children: [
-            MyCards(),
-            RecentTransaction(),
-            WeeklyActivity(),
-            ExpenseStatistics(),
-            QuickTransfer(),
-            BalanceHistory(),
-          ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: sections
+              .map(
+                (section) => Padding(
+                  padding: const EdgeInsets.only(bottom: 25),
+                  child: section,
+                ),
+              )
+              .toList(),
         ),
       ),
     );
