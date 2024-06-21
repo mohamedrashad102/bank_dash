@@ -149,6 +149,10 @@ class Assets {
   /// assets/images/life-insurance.svg
   static const String imagesLifeInsurance = "assets/images/life-insurance.svg";
 
+  /// Assets for imagesLivia
+  /// assets/images/livia.png
+  static const String imagesLivia = "assets/images/livia.png";
+
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
@@ -205,6 +209,10 @@ class Assets {
   /// assets/images/playstation.svg
   static const String imagesPlaystation = "assets/images/playstation.svg";
 
+  /// Assets for imagesRandy
+  /// assets/images/randy.png
+  static const String imagesRandy = "assets/images/randy.png";
+
   /// Assets for imagesRateReturn
   /// assets/images/rate_return.svg
   static const String imagesRateReturn = "assets/images/rate_return.svg";
@@ -220,6 +228,10 @@ class Assets {
   /// Assets for imagesSearch
   /// assets/images/search.svg
   static const String imagesSearch = "assets/images/search.svg";
+
+  /// Assets for imagesSendIcon
+  /// assets/images/send_icon.svg
+  static const String imagesSendIcon = "assets/images/send_icon.svg";
 
   /// Assets for imagesService
   /// assets/images/service.svg
@@ -272,5 +284,9 @@ class Assets {
   /// Assets for imagesUserYellow
   /// assets/images/user_yellow.svg
   static const String imagesUserYellow = "assets/images/user_yellow.svg";
+
+  /// Assets for imagesWorkman
+  /// assets/images/workman.png
+  static const String imagesWorkman = "assets/images/workman.png";
 }
 
