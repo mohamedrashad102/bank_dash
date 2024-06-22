@@ -4,10 +4,40 @@ import 'package:flutter/material.dart';
 
 import 'transfer_item.dart';
 
-class TransferItems extends StatelessWidget {
-  const TransferItems({super.key});
+class TransferRowItems extends StatelessWidget {
+  const TransferRowItems({super.key});
 
   static List<TransferModel> transfers = [
+    const TransferModel(
+      photoPath: Assets.imagesLivia,
+      name: 'Livia Bator',
+      job: 'CEO',
+    ),
+    const TransferModel(
+      photoPath: Assets.imagesRandy,
+      name: 'Randy Press',
+      job: 'Director',
+    ),
+    const TransferModel(
+      photoPath: Assets.imagesWorkman,
+      name: 'Workman',
+      job: 'Disigner',
+    ),
+    const TransferModel(
+      photoPath: Assets.imagesLivia,
+      name: 'Livia Bator',
+      job: 'CEO',
+    ),
+    const TransferModel(
+      photoPath: Assets.imagesRandy,
+      name: 'Randy Press',
+      job: 'Director',
+    ),
+    const TransferModel(
+      photoPath: Assets.imagesWorkman,
+      name: 'Workman',
+      job: 'Disigner',
+    ),
     const TransferModel(
       photoPath: Assets.imagesLivia,
       name: 'Livia Bator',

@@ -2,6 +2,7 @@ import 'package:bank_dash/core/cubits/drawer_cubit/drawer_cubit.dart';
 import 'package:bank_dash/core/utils/app_router.dart';
 import 'package:bank_dash/core/utils/light_theme.dart';
 import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
+import 'package:bank_dash/layers/mobile_layout/transactions/cubits/expense_cubit.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => TabBarCubit(),
+        ),
+        BlocProvider(
+          create: (context) => ExpenseCubit(),
         ),
       ],
       child: MaterialApp.router(
