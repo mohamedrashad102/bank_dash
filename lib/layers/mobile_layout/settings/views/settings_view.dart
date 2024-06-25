@@ -1,10 +1,10 @@
-import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
+import 'package:bank_dash/layers/mobile_layout/settings/cubits/settings_tab_bar_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
-import '../widgets/custom_tab_bar.dart';
+import '../widgets/settings_tab_bar.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({super.key});
@@ -23,7 +23,7 @@ class SettingsView extends StatelessWidget {
         child: const Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CustomTabBar(),
+            SettingsTabBar(),
             Gap(20),
             Expanded(child: TabsBody()),
           ],
@@ -38,9 +38,9 @@ class TabsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TabBarCubit, TabBarCubitState>(
+    return BlocBuilder<SettingsTabBarCubit, SettingsTabBarCubitState>(
       builder: (context, state) {
-        return TabBarCubit.get(context).currentTabBody;
+        return SettingsTabBarCubit.get(context).currentTabBody;
       },
     );
   }

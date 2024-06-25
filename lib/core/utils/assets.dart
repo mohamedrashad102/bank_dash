@@ -269,6 +269,14 @@ class Assets {
   /// assets/images/total_invest.svg
   static const String imagesTotalInvest = "assets/images/total_invest.svg";
 
+  /// Assets for imagesTransactionExpense
+  /// assets/images/transaction_expense.svg
+  static const String imagesTransactionExpense = "assets/images/transaction_expense.svg";
+
+  /// Assets for imagesTransactionIncome
+  /// assets/images/transaction_income.svg
+  static const String imagesTransactionIncome = "assets/images/transaction_income.svg";
+
   /// Assets for imagesTransactionsIcon
   /// assets/images/transactions_icon.svg
   static const String imagesTransactionsIcon = "assets/images/transactions_icon.svg";

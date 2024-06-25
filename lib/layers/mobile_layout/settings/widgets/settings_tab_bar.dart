@@ -1,17 +1,17 @@
-import 'package:bank_dash/layers/mobile_layout/settings/cubits/tab_bar_cubit.dart';
+import 'package:bank_dash/layers/mobile_layout/settings/cubits/settings_tab_bar_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'tab_bar_item.dart';
 
-class CustomTabBar extends StatelessWidget {
-  const CustomTabBar({super.key});
+class SettingsTabBar extends StatelessWidget {
+  const SettingsTabBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TabBarCubit, TabBarCubitState>(
+    return BlocBuilder<SettingsTabBarCubit, SettingsTabBarCubitState>(
       builder: (context, state) {
-        final tabBarCubit = TabBarCubit.get(context);
+        final tabBarCubit = SettingsTabBarCubit.get(context);
         return Column(
           children: [
             Row(
