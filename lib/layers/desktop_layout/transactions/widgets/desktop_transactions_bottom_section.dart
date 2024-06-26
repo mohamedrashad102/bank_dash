@@ -1,13 +1,15 @@
 import 'package:bank_dash/core/widgets/title_text.dart';
+import 'package:bank_dash/layers/desktop_layout/transactions/widgets/desktop_transactions_table.dart';
+import 'package:bank_dash/layers/desktop_layout/transactions/widgets/desktop_transactions_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/widgets/custom_transactions_page_slider.dart';
-import 'recent_transactions_tabs_body.dart';
-import 'recent_transactions_tabs_title.dart';
 
-class RecentTransactions extends StatelessWidget {
-  const RecentTransactions({super.key});
+class DesktopTransactionsBottomSection extends StatelessWidget {
+  const DesktopTransactionsBottomSection({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +18,10 @@ class RecentTransactions extends StatelessWidget {
       children: [
         TitleText(title: 'Recent Transactions'),
         Gap(12),
-        RecentTransactionsTabsTitle(),
-        Gap(12),
-        RecentTransactionsTabsBody(),
-        Gap(12),
+        DesktopTransactionsTabs(),
+        Gap(20),
+        DesktopTransactionsTable(),
+        Gap(20),
         CustomTransactionsPageSlider(),
       ],
     );

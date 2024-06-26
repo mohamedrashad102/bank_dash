@@ -1,6 +1,6 @@
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/app_styles/app_styles.dart';
-import 'package:bank_dash/layers/mobile_layout/transactions/cubits/transactions_tab_bar_cubit.dart';
+import 'package:bank_dash/core/cubits/drawer_cubit/recent_transactions/recent_transactions_cubit.dart';
 import 'package:flutter/material.dart';
 
 class RecentTransactionsPageSliderItem extends StatelessWidget {
@@ -15,7 +15,7 @@ class RecentTransactionsPageSliderItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => TransactionsTabBarCubit.get(context).changePageIndex(index),
+      onTap: () => RecentTransactionsCubit.get(context).changePageIndex(index),
       child: Container(
         height: 30,
         width: 30,
