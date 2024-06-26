@@ -1,5 +1,4 @@
 import 'package:bank_dash/layers/mobile_layout/transactions/cubits/transactions_tab_bar_cubit.dart';
-import 'package:bank_dash/layers/mobile_layout/transactions/widgets/recent_transactions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
