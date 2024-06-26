@@ -4,6 +4,7 @@ import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/layers/desktop_layout/account/views/desktop_account_view.dart';
 import 'package:bank_dash/layers/desktop_layout/loans/views/desktop_loans_view.dart';
 import 'package:bank_dash/layers/desktop_layout/services/views/desktop_services_view.dart';
+import 'package:bank_dash/layers/desktop_layout/transactions/views/desktop_transactions_view.dart';
 import 'package:bank_dash/layers/mobile_layout/overview/views/overview_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -86,7 +87,7 @@ class DrawerCubit extends Cubit<DrawerCubitState> {
     DrawerModel(
       title: 'Transactions',
       icon: Assets.imagesTransactionsIcon,
-      view: DesktopCreditCardsView(), // put DesktopTransactionsView() here
+      view: DesktopTransactionsView(), // put DesktopTransactionsView() here
     ),
     DrawerModel(
       title: 'Accounts',

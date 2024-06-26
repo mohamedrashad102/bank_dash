@@ -5,8 +5,8 @@ import 'package:bank_dash/core/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class DesktopOverViewMyCard extends StatelessWidget {
-  const DesktopOverViewMyCard({super.key});
+class CustomDesktopMyCard extends StatelessWidget {
+  const CustomDesktopMyCard({super.key});
 
   static List<CreditCardModel> cards = [
     CreditCardModel(

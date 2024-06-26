@@ -3,7 +3,7 @@ import 'package:bank_dash/layers/mobile_layout/overview/widgets/my_cards.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/widgets/custom_scaffold.dart';
-import '../widgets/my_expense.dart';
+import '../../../../core/widgets/custom_my_expense.dart';
 import '../widgets/recent_transactions.dart';
 
 class TransactionsView extends StatelessWidget {
@@ -11,7 +11,7 @@ class TransactionsView extends StatelessWidget {
 
   static List<Widget> sections = [
     const MyCards(),
-    const MyExpense(),
+    const CustomMyExpense(),
     const RecentTransactions(),
   ];
 

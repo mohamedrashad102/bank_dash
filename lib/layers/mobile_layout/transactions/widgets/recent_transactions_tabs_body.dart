@@ -1,5 +1,5 @@
 import 'package:bank_dash/core/widgets/custom_visibility.dart';
-import 'package:bank_dash/layers/mobile_layout/transactions/cubits/transactions_tab_bar_cubit.dart';
+import 'package:bank_dash/core/cubits/drawer_cubit/recent_transactions/recent_transactions_cubit.dart';
 import 'package:bank_dash/layers/mobile_layout/transactions/widgets/recent_transactions_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,9 +9,9 @@ class RecentTransactionsTabsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TransactionsTabBarCubit, TransactionsTabBarCubitState>(
+    return BlocBuilder<RecentTransactionsCubit, RecentTransactionsCubitState>(
       builder: (context, state) {
-        final cubit = TransactionsTabBarCubit.get(context);
+        final cubit = RecentTransactionsCubit.get(context);
         final width = MediaQuery.of(context).size.width;
         double height;
         if (width > 430) {
