@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/widgets/title_text.dart';
-import '../../../mobile_layout/overview/widgets/expense_pie_chart.dart';
+import '../../../mobile_layout/overview/widgets/balance_history_chart.dart';
 import 'desktop_over_view_my_card.dart';
 import 'desktop_over_view_weekly_active.dart';
+import 'desktop_overview_expense_statistics.dart';
+import 'desktop_overview_quick_transfer.dart';
 import 'desktop_overview_resent_transaction.dart';
 
 class DesktopOverviewView extends StatelessWidget {
@@ -40,28 +42,43 @@ class DesktopOverviewView extends StatelessWidget {
             ),
           ],
         ),
+        Gap(20),
+        Row(
+          children: [
+            Expanded(
+              child: DesktopOverviewQuickTransfer(),
+            ),
+            Gap(25),
+            Expanded(
+              flex: 2,
+              child: DesktopOverviewBalanceHistory(),
+            ),
+          ],
+        ),
       ],
     );
   }
 }
 
-class DesktopOverviewExpenseStatistics extends StatelessWidget {
-  const DesktopOverviewExpenseStatistics({super.key});
+class DesktopOverviewBalanceHistory extends StatelessWidget {
+  const DesktopOverviewBalanceHistory({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const TitleText(title: 'Expense Statistics'),
+        const TitleText(title: 'Balance History'),
         const Gap(12),
         Container(
-          height: 260,
+          height: 215,
+          width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15),
           ),
-          child: const ExpensePieChart(),
+          padding: const EdgeInsets.all(15),
+          child: const BalanceHistoryChart(),
         ),
       ],
     );

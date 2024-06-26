@@ -33,13 +33,11 @@ class QuickTransfer extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Gap(12),
         TitleText(title: 'Quick Transfer'),
         Gap(12),
         QuickTransferPeoples(),
         Gap(12),
         QuickTransferBottomSection(),
-        Gap(12),
       ],
     );
   }
