@@ -124,6 +124,7 @@ class DesktopOverViewMyCard extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 15.0),
                       child: SizedBox(
                         width: 350,
+                        height: 215,
                         child: CreditCardWidget(card: card),
                       ),
                     ))
