@@ -121,7 +121,7 @@ class DesktopOverViewMyCard extends StatelessWidget {
           child: Row(
             children: cards
                 .map((card) => Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
+                      padding: const EdgeInsets.only(right: 25.0),
                       child: SizedBox(
                         width: 350,
                         height: 215,
