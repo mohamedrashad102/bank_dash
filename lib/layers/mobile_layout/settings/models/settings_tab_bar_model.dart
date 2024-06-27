@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class SettingsTabBarModel {
   final String title;
-  final Widget body;
+  final Widget mobileBody;
+  final Widget desktopBody;
 
   const SettingsTabBarModel({
     required this.title,
-    required this.body,
+    required this.mobileBody,
+    required this.desktopBody,
   });
 }
