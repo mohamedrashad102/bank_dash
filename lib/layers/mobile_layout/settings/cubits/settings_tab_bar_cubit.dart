@@ -4,6 +4,8 @@ import 'package:bank_dash/layers/mobile_layout/settings/widgets/security_tab_bod
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../desktop_layout/settings/widgets/desktop_settings_edit_profile.dart';
+import '../../../desktop_layout/settings/widgets/desktop_settings_preference.dart';
 import '../widgets/preference_tab_body.dart';
 
 part 'settings_tab_bar_cubit_state.dart';
@@ -18,19 +20,23 @@ class SettingsTabBarCubit extends Cubit<SettingsTabBarCubitState> {
   final List<SettingsTabBarModel> tabs = const [
     SettingsTabBarModel(
       title: 'Edit Profile',
-      body: EditProfileTabBody(),
+      mobileBody: EditProfileTabBody(),
+      desktopBody: DesktopSettingsEditProfile(),
     ),
     SettingsTabBarModel(
       title: 'Preference',
-      body: PreferenceTabBody(),
+      mobileBody: PreferenceTabBody(),
+      desktopBody: DesktopSettingsPreference(),
     ),
     SettingsTabBarModel(
       title: 'Security',
-      body: SecurityTabBody(),
+      mobileBody: SecurityTabBody(),
+      desktopBody: DesktopSettingsSecurity(),
     ),
   ];
 
-  Widget get currentTabBody => tabs[currentIndex].body;
+  Widget get currentMobileTabBody => tabs[currentIndex].mobileBody;
+  Widget get currentDesktopTabBody => tabs[currentIndex].desktopBody;
 
   void changeIndex(int index) {
     currentIndex = index;
