@@ -15,7 +15,7 @@ class DesktopCardsList extends StatelessWidget {
       subTitle: 'Secondary',
       bank: 'DBL Bank',
       cardName: 'Abdo',
-      cardNumber: '**** **** 7560',
+      cardNumber: '3482 **** **** 7560',
     ),
     CardModel(
       icon: Assets.imagesCreditCardPink,
@@ -23,7 +23,7 @@ class DesktopCardsList extends StatelessWidget {
       subTitle: 'Secondary',
       bank: 'BRC Bank',
       cardName: 'Rashad',
-      cardNumber: '**** **** 7560',
+      cardNumber: '9438 **** **** 7560',
     ),
     CardModel(
       icon: Assets.imagesCreditCardYellow,
@@ -31,7 +31,7 @@ class DesktopCardsList extends StatelessWidget {
       subTitle: 'Secondary',
       bank: 'ABM Bank',
       cardName: 'Moaz',
-      cardNumber: '**** **** 7560',
+      cardNumber: '4948 **** **** 7560',
     ),
     CardModel(
       icon: Assets.imagesCreditCardYellow,
@@ -39,7 +39,7 @@ class DesktopCardsList extends StatelessWidget {
       subTitle: 'Secondary',
       bank: 'ABM Bank',
       cardName: 'Abboud',
-      cardNumber: '**** **** 7560',
+      cardNumber: '4948 **** **** 7560',
     ),
   ];
 
@@ -50,7 +50,10 @@ class DesktopCardsList extends StatelessWidget {
           .map(
             (e) => Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
-              child: CardItem(cardModel: e),
+              child: CardItem(
+                cardModel: e,
+                isMobile: false,
+              ),
             ),
           )
           .toList(),
