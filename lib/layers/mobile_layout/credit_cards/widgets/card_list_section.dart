@@ -14,7 +14,9 @@ class CardListSection extends StatelessWidget {
       children: [
         TitleText(title: 'Card List'),
         Gap(12),
-        CardsList(),
+        CardsList(
+          isMobile: true,
+        ),
       ],
     );
   }

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/models/text_field_model.dart';
-import 'profile_image.dart';
+import '../../../../core/widgets/custom_settings_profile_image.dart';
 
 class EditProfileTabBody extends StatelessWidget {
   const EditProfileTabBody({super.key});
@@ -57,7 +57,7 @@ class EditProfileTabBody extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const ProfileImage(),
+          const CustomSettingsProfileImage(),
           const Gap(20),
           ...textFieldModels.map((model) => Padding(
                 padding: const EdgeInsets.only(bottom: 15),

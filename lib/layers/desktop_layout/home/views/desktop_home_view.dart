@@ -19,7 +19,6 @@ class DesktopHomeView extends StatelessWidget {
     return BlocBuilder<DrawerCubit, DrawerCubitState>(
       builder: (context, state) {
         final cubit = DrawerCubit.get(context);
-
         return Scaffold(
           body: Row(
             children: [

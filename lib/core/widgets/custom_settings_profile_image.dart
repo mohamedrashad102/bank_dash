@@ -2,8 +2,8 @@ import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-class ProfileImage extends StatelessWidget {
-  const ProfileImage({
+class CustomSettingsProfileImage extends StatelessWidget {
+  const CustomSettingsProfileImage({
     super.key,
   });
 

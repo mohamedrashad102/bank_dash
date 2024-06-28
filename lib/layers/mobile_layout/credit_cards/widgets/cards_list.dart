@@ -1,13 +1,17 @@
-import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:bank_dash/core/utils/app_colors.dart';
 import 'package:bank_dash/core/utils/assets.dart';
+import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:bank_dash/layers/mobile_layout/credit_cards/widgets/card_item.dart';
 import 'package:flutter/material.dart';
 
 class CardsList extends StatelessWidget {
   const CardsList({
     super.key,
+    required this.isMobile,
   });
+
+  final bool isMobile;
+
   static List<CardModel> cardModels = [
     CardModel(
       icon: Assets.imagesCreditCardBlue,
@@ -36,7 +40,10 @@ class CardsList extends StatelessWidget {
           .map(
             (e) => Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
-              child: CardItem(cardModel: e),
+              child: CardItem(
+                cardModel: e,
+                isMobile: isMobile,
+              ),
             ),
           )
           .toList(),
