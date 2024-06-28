@@ -191,6 +191,10 @@ class Assets {
   static const String imagesMyPrivilegesIcon =
       "assets/images/my_privileges_icon.svg";
 
+  /// Assets for imagesNetwork
+  /// assets/images/network.svg
+  static const String imagesNetwork = "assets/images/network.svg";
+
   /// Assets for imagesNotification
   /// assets/images/notification.svg
   static const String imagesNotification = "assets/images/notification.svg";
@@ -309,6 +313,14 @@ class Assets {
   /// Assets for imagesUserYellow
   /// assets/images/user_yellow.svg
   static const String imagesUserYellow = "assets/images/user_yellow.svg";
+
+  /// Assets for imagesVector
+  /// assets/images/vector.svg
+  static const String imagesVector = "assets/images/vector.svg";
+
+  /// Assets for imagesVectorBlue
+  /// assets/images/vector_blue.svg
+  static const String imagesVectorBlue = "assets/images/vector_blue.svg";
 
   /// Assets for imagesWorkman
   /// assets/images/workman.png
