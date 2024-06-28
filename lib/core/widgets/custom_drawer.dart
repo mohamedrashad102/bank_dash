@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
-import 'package:go_router/go_router.dart';
 
 import '../cubits/drawer_cubit/drawer_cubit.dart';
 import '../models/drawer_model.dart';
@@ -54,6 +53,7 @@ class DrawerListView extends StatelessWidget {
         final cubit = DrawerCubit.get(context);
         final items = cubit.mobileDrawerItems;
         return ListView.builder(
+          padding: EdgeInsets.zero,
           shrinkWrap: true,
           itemBuilder: (context, index) => DrawerListViewItem(
             item: items[index],

@@ -29,7 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.6
-  device_preview: 1.1.0
+  device_preview: ^1.2.0
   expandable_page_view: ^1.0.17
   fl_chart: ^0.68.0
   flutter:
@@ -38,13 +38,13 @@ dependencies:
   flutter_svg: ^2.0.10+1
   gap: ^3.0.1
   go_router: ^14.1.3
-  intl: ^0.18.1
-  syncfusion_flutter_charts: ^25.2.6
-  syncfusion_localizations: ^25.2.6
+  intl: 0.19.0
+  syncfusion_flutter_charts: ^26.1.39
+  syncfusion_localizations: ^26.1.39
   zoom_widget: ^2.0.1
 
 dev_dependencies:
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 

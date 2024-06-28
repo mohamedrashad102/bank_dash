@@ -3,7 +3,6 @@ import 'package:bank_dash/layers/mobile_layout/loans/widgets/loans_header.dart';
 import 'package:bank_dash/layers/mobile_layout/loans/widgets/loans_items_list.dart';
 import 'package:flutter/material.dart';
 
-import '../../../desktop_layout/loans/widgets/loan_table.dart';
 import 'total_loans_section.dart';
 
 class LoansOverviewContent extends StatelessWidget {

@@ -18,7 +18,13 @@ class CreditCardBottomSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          card.cardNumber,
+          card.cardNumber
+              .split(' ')
+              .asMap()
+              .entries
+              .map((entry) =>
+                  (entry.key == 0 || entry.key == 3) ? entry.value : '****')
+              .join(' '),
           style: AppStyles.medium
               .fontSize16(context)
               .copyWith(color: Colors.white),

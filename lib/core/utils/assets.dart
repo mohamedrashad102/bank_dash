@@ -158,6 +158,10 @@ class Assets {
   /// assets/images/life-insurance.svg
   static const String imagesLifeInsurance = "assets/images/life-insurance.svg";
 
+  /// Assets for imagesLivia
+  /// assets/images/livia.png
+  static const String imagesLivia = "assets/images/livia.png";
+
   /// Assets for imagesLoansIcon
   /// assets/images/loans_icon.svg
   static const String imagesLoansIcon = "assets/images/loans_icon.svg";
@@ -221,6 +225,10 @@ class Assets {
   /// assets/images/playstation.svg
   static const String imagesPlaystation = "assets/images/playstation.svg";
 
+  /// Assets for imagesRandy
+  /// assets/images/randy.png
+  static const String imagesRandy = "assets/images/randy.png";
+
   /// Assets for imagesRateReturn
   /// assets/images/rate_return.svg
   static const String imagesRateReturn = "assets/images/rate_return.svg";
@@ -236,6 +244,10 @@ class Assets {
   /// Assets for imagesSearch
   /// assets/images/search.svg
   static const String imagesSearch = "assets/images/search.svg";
+
+  /// Assets for imagesSendIcon
+  /// assets/images/send_icon.svg
+  static const String imagesSendIcon = "assets/images/send_icon.svg";
 
   /// Assets for imagesService
   /// assets/images/service.svg
@@ -275,6 +287,16 @@ class Assets {
   /// assets/images/total_invest.svg
   static const String imagesTotalInvest = "assets/images/total_invest.svg";
 
+  /// Assets for imagesTransactionExpense
+  /// assets/images/transaction_expense.svg
+  static const String imagesTransactionExpense =
+      "assets/images/transaction_expense.svg";
+
+  /// Assets for imagesTransactionIncome
+  /// assets/images/transaction_income.svg
+  static const String imagesTransactionIncome =
+      "assets/images/transaction_income.svg";
+
   /// Assets for imagesTransactionsIcon
   /// assets/images/transactions_icon.svg
   static const String imagesTransactionsIcon =
@@ -299,4 +321,7 @@ class Assets {
   /// Assets for imagesVectorBlue
   /// assets/images/vector_blue.svg
   static const String imagesVectorBlue = "assets/images/vector_blue.svg";
+  /// Assets for imagesWorkman
+  /// assets/images/workman.png
+  static const String imagesWorkman = "assets/images/workman.png";
 }
