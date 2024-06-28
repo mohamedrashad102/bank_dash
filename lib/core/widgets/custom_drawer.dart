@@ -53,6 +53,7 @@ class DrawerListView extends StatelessWidget {
         final cubit = DrawerCubit.get(context);
         final items = cubit.mobileDrawerItems;
         return ListView.builder(
+          padding: EdgeInsets.zero,
           shrinkWrap: true,
           itemBuilder: (context, index) => DrawerListViewItem(
             item: items[index],
