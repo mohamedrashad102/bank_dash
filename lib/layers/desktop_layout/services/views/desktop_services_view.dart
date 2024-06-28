@@ -7,6 +7,7 @@ import 'package:gap/gap.dart';
 
 import '../../../mobile_layout/services/widgets/bank_services_list_section.dart';
 import '../widgets/desktop_services_items_section.dart';
+import '../widgets/services_chart_header.dart';
 
 class DesktopServicesView extends StatelessWidget {
   const DesktopServicesView({
@@ -20,14 +21,23 @@ class DesktopServicesView extends StatelessWidget {
         const DesktopServicesItemsSection(),
         const Gap(22),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Expanded(flex: 1, child: BankServicesListSection()),
+            const Gap(22),
             Expanded(
-                flex: 2,
-                child: SvgPicture.asset(
-                  Assets.imagesServicesChart,
-                  height: 400,
-                )),
+              flex: 2,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const ServicesChartHeader(),
+                  SvgPicture.asset(
+                    Assets.imagesServicesChart,
+                    height: 450,
+                  ),
+                ],
+              ),
+            ),
           ],
         )
       ],
