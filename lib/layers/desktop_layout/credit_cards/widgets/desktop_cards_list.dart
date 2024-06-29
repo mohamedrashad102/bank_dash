@@ -50,7 +50,10 @@ class DesktopCardsList extends StatelessWidget {
           .map(
             (e) => Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
-              child: CardItem(cardModel: e),
+              child: CardItem(
+                cardModel: e,
+                isMobile: false,
+              ),
             ),
           )
           .toList(),

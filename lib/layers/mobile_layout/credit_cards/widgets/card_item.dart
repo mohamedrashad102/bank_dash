@@ -8,10 +8,12 @@ import 'custom_text_column.dart';
 
 class CardItem extends StatelessWidget {
   final CardModel cardModel;
+  final bool isMobile;
 
   const CardItem({
     super.key,
     required this.cardModel,
+    required this.isMobile,
   });
 
   @override
@@ -54,7 +56,7 @@ class CardItem extends StatelessWidget {
       ),
     ];
 
-    List<int> flexes = [3, 2, 3, 2, 2];
+    List<int> desktopFlexes = [3, 2, 3, 2, 2];
 
     return Container(
       padding: const EdgeInsets.all(12),
@@ -63,23 +65,28 @@ class CardItem extends StatelessWidget {
         color: Colors.white,
       ),
       child: Row(
-        children: cols
-            .asMap()
-            .entries
-            .map(
-              (entry) => Expanded(
-                flex: flexes[entry.key],
-                child: Align(
-                  alignment: entry.key == 0
-                      ? Alignment.centerLeft
-                      : entry.key == cols.length - 1
-                          ? Alignment.centerRight
-                          : Alignment.center,
-                  child: entry.value,
-                ),
-              ),
-            )
-            .toList(),
+        mainAxisAlignment: isMobile
+            ? MainAxisAlignment.spaceBetween
+            : MainAxisAlignment.spaceBetween,
+        children: isMobile
+            ? cols
+            : cols
+                .asMap()
+                .entries
+                .map(
+                  (entry) => Expanded(
+                    flex: desktopFlexes[entry.key],
+                    child: Align(
+                      alignment: entry.key == 0
+                          ? Alignment.centerLeft
+                          : entry.key == cols.length - 1
+                              ? Alignment.centerRight
+                              : Alignment.center,
+                      child: entry.value,
+                    ),
+                  ),
+                )
+                .toList(),
       ),
     );
   }
