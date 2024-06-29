@@ -3,7 +3,10 @@ import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/layers/mobile_layout/credit_cards/models/card_model.dart';
 import 'package:flutter/material.dart';
 
+
 import '../../../mobile_layout/credit_cards/widgets/card_item.dart';
+import 'desktop_card_item.dart';
+
 
 class DesktopCardsList extends StatelessWidget {
   const DesktopCardsList({
@@ -51,10 +54,14 @@ class DesktopCardsList extends StatelessWidget {
           .map(
             (e) => Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
+
               child: CardItem(
                 cardModel: e,
                 isMobile: false,
               ),
+
+              child: DesktopCardItem(cardModel: e),
+
             ),
           )
           .toList(),
